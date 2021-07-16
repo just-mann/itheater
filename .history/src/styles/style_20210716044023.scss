@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.ShowList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidenav header header header header header header header header"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide";
+
+    .Header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 88.9%;
+        height: 60px;
+        grid-area: header;
+        background: red;
+        padding: 20px 30px;
+    }
+
+    .SideNav {
+        grid-area: sidenav;
+        width: 100%;
+        background: black;
+    }
+
+    .rightSide {
+        grid-area: rightSide;
+        padding: 15px 30px;
+    }
+}
+
+.Contact {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidenav header header header header header header header header"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide";
+
+    .Header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 88.9%;
+        height: 60px;
+        grid-area: header;
+        background: red;
+        padding: 20px 30px;
+    }
+
+    .SideNav {
+        grid-area: sidenav;
+        width: 100%;
+        height: 100vh;
+        background: black;
+    }
+
+    .rightSide {
+        grid-area: rightSide;
+    }
+}

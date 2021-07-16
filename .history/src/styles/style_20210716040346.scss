@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.Header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    @include flex(row, space-between, center);
+    padding: 0;
+    
+    .app_Logo {
+        text-decoration: none;
+        height: 100%;
+        width: 20%;
+        padding: 16.5px 5px;
+        background: #eb1919;
+        text-align: center;
+        color: white;
+    }
+
+    div {
+        width: 80%;
+        height: 100%;
+        padding: 5.5px 5px;
+        @include flex(row, center, center);
+        background: #ff0000;
+
+        .Search {
+            form {
+
+                input {
+                    padding: 5px 10px;
+                }
+
+                button {
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        .currTime {
+            color: white;
+        }
+    }
+}
+
+.ShowList {
+
+    div {
+        @include flex(row, space-between, center);
+
+        .SideNav {
+            position: fixed;
+            top: 10px;
+            width: 20%;
+            height: 100vh;
+            background: #1f1e1e;
+
+            .links {
+                
+            }
+        }
+
+        .rightSide {
+            width: 80%;
+
+            div {
+                                
+            }
+        }
+    }
+}

@@ -10,57 +10,5 @@ html {
 }
 
 .Header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-}
-.Header .app_Logo {
-  text-decoration: none;
-  height: 100%;
-  width: 20%;
-  padding: 16.5px 5px;
-  background: #eb1919;
-  text-align: center;
-  color: white;
-}
-.Header div {
-  width: 80%;
-  height: 100%;
-  padding: 5.5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ff0000;
-}
-.Header div .Search form input {
-  padding: 5px 10px;
-}
-.Header div .Search form button {
-  padding: 5px 10px;
+  background: #EE005F;
 }

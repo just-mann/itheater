@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.ShowList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidenav header header header header header header header header"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide";
+
+    .Header {
+        grid-area: header;
+        background: red;
+        padding: 15px 30px;
+    }
+
+    .SideNav {
+        grid-area: sidenav;
+        width: 100%;
+        background: black;
+    }
+
+    .rightSide {
+        grid-area: rightSide;
+    }
+}
+
+.Contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidenav header header header header header header header header"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide"
+        "sidenav rightSide rightSide rightSide rightSide rightSide rightSide rightSide rightSide";
+
+    .Header {
+        grid-area: header;
+        background: red;
+        padding: 15px 30px;
+    }
+
+    .SideNav {
+        grid-area: sidenav;
+        width: 100%;
+        background: black;
+    }
+
+    .rightSide {
+        grid-area: rightSide;
+    }
+}
