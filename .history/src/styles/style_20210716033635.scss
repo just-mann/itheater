@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.ShowList {
+
+    .Header {
+        width: 100%;
+        background: red;
+        @include flex(row, space-between, center);
+        padding: 0px;
+        
+        .app_Logo {
+            height: 100%;
+            width: 200px;
+            padding: 8px 5px;
+            background: #b42727;
+            text-align: center;
+            color: white;
+        }
+
+        div {
+            @include flex(row, space-between, center);
+        }
+    }
+}

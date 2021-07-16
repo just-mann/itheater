@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.ShowList {
+    display: grid;
+    grid-template-columns: 2fr 11fr;
+
+    .SideNav {
+        width: 150px;
+        background: yellow;
+    }
+
+    .rightSide {
+        background: red;
+        width: 100%;
+    }
+}

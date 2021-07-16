@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Header {
+    @include flex(row, space-between, center);
+    background: red;
+    width: 100%;
+    padding: 15px 35px;
+    
+    .Search {
+        
+        form {
+            input {
+                padding: 5px 10px;
+            }
+        }
+    }
+}

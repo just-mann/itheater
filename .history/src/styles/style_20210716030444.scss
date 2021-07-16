@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'my_mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Header {
+    @include flex(row, space-between, center);
+    background: red;
+    width: 100%;
+    padding: 20px 35px;
+
+    .my_Logo {
+        font-size: 2.3rem;
+        color: white;
+    }
+}
