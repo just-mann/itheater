@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import { movieContext } from '../contexts/MovieContext';
-import Header from './Header';
+import Header from './components/Header';
 
 
 const ShowList = () => {

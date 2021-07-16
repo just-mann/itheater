@@ -4,7 +4,7 @@ export const movieContext = createContext();
 
 const MovieContextProvider = (props) => {
 
-    const [movie, setMovie] = useState('Smooth');
+    const [movie, setMovie] = useState('Breaking Bad');
 
     // Data to be displayed...
     const [data, setData] = useState([])

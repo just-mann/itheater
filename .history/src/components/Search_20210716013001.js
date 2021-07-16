@@ -4,8 +4,6 @@ import {movieContext} from '../contexts/MovieContext';
 
 const Search = () => {
 
-    const history = useHistory();
-
     const {EnterShow} = useContext(movieContext)
 
     const [newSearch, setNewSearch] = useState('');
@@ -14,17 +12,17 @@ const Search = () => {
         setNewSearch(e.target.value);
     }
 
-    // const reDirect = () => {
-    //     let path = '/';
-    //     let history = useHistory();
-    //     history.push(path);
-    // }
+    const reDirect = () => {
+        let path = '/';
+        let history = useHistory();
+        history.push(path);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         EnterShow(newSearch);
         setNewSearch('');
-        history.push('/')
+        reDirect();
     }
 
     return (

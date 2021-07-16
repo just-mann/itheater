@@ -4,7 +4,7 @@ export const movieContext = createContext();
 
 const MovieContextProvider = (props) => {
 
-    const [movie, setMovie] = useState('Smooth');
+    const [movie, setMovie] = useState('Shameless');
 
     // Data to be displayed...
     const [data, setData] = useState([])
@@ -15,12 +15,9 @@ const MovieContextProvider = (props) => {
     }
 
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?s=${movie}&apikey=2c0bfe2d`)
+        fetch(`http://www.omdbapi.com/?t=${movie}&apikey=2c0bfe2d`)
             .then(res => res.json())
-            .then(data => {
-                setData(data.Search)
-                console.log(data.Search)
-            })
+            .then(data => setData(data))
             .catch(err => console.log(err))
     }, [movie])
 

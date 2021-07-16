@@ -4,8 +4,6 @@ import {movieContext} from '../contexts/MovieContext';
 
 const Search = () => {
 
-    const history = useHistory();
-
     const {EnterShow} = useContext(movieContext)
 
     const [newSearch, setNewSearch] = useState('');
@@ -24,7 +22,7 @@ const Search = () => {
         e.preventDefault();
         EnterShow(newSearch);
         setNewSearch('');
-        history.push('/')
+        window.location.href = '/';
     }
 
     return (

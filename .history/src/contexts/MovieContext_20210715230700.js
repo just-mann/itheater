@@ -4,23 +4,23 @@ export const movieContext = createContext();
 
 const MovieContextProvider = (props) => {
 
-    const [movie, setMovie] = useState('Smooth');
+    const [movie, setMovie] = useState('Shameless');
 
     // Data to be displayed...
     const [data, setData] = useState([])
-   
+
+    // APIURI
+    // const apiUrl = 'http://www.omdbapi.com/?i=tt3896198&apikey=2c0bfe2d';
+
     // Function to enter movie or show name
     const EnterShow = (show) => {
         setMovie(show);
     }
 
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?s=${movie}&apikey=2c0bfe2d`)
+        fetch(`http://www.omdbapi.com/?t=${movie}&apikey=2c0bfe2d`)
             .then(res => res.json())
-            .then(data => {
-                setData(data.Search)
-                console.log(data.Search)
-            })
+            .then(data => setData(data))
             .catch(err => console.log(err))
     }, [movie])
 

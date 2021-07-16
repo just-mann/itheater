@@ -4,7 +4,7 @@ export const movieContext = createContext();
 
 const MovieContextProvider = (props) => {
 
-    const [movie, setMovie] = useState('Smooth');
+    const [movie, setMovie] = useState('Breaking Bad');
 
     // Data to be displayed...
     const [data, setData] = useState([])
@@ -18,8 +18,8 @@ const MovieContextProvider = (props) => {
         fetch(`http://www.omdbapi.com/?s=${movie}&apikey=2c0bfe2d`)
             .then(res => res.json())
             .then(data => {
-                setData(data.Search)
-                console.log(data.Search)
+                setData(data)
+                console.log(data.search.title)
             })
             .catch(err => console.log(err))
     }, [movie])

@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import { movieContext } from '../contexts/MovieContext';
-import Header from './Header';
 
 
 const ShowList = () => {
@@ -11,7 +10,6 @@ const ShowList = () => {
 
     return (
         <div className="ShowList">
-            <Header />
             <h3>Movie Data (List)</h3>
             <div>
                 {data.map(myData => {

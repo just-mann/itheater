@@ -24,7 +24,7 @@ const Search = () => {
         e.preventDefault();
         EnterShow(newSearch);
         setNewSearch('');
-        history.push('/')
+        history.pushState('/')
     }
 
     return (

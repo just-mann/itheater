@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import MovieContextProvider from './contexts/MovieContext';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Contact from './components/Contact';
@@ -11,6 +12,7 @@ const App = () => {
         <MovieContextProvider>
         <Router>
           <Switch>
+          <Header />
             <Route exact path='/'>
               <ShowList />
             </Route>

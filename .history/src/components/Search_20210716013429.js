@@ -4,8 +4,6 @@ import {movieContext} from '../contexts/MovieContext';
 
 const Search = () => {
 
-    const history = useHistory();
-
     const {EnterShow} = useContext(movieContext)
 
     const [newSearch, setNewSearch] = useState('');
@@ -24,7 +22,10 @@ const Search = () => {
         e.preventDefault();
         EnterShow(newSearch);
         setNewSearch('');
-        history.push('/')
+        // const windowLocation = window.location.href;
+        // if(windowLocation === '/contact') {
+            window.location.href = '/';
+        // }
     }
 
     return (

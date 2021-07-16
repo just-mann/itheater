@@ -1,6 +1,5 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import Header from './Header';
 
 const Contact = () => {
 
@@ -19,10 +18,9 @@ const Contact = () => {
 
     return (
         <div className="Contact">
-            <Header />
             <h3>Contact Component</h3>
             <div>
-                <form onSubmit={sendMessage}>
+                <form>
                     <div>
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name"/>

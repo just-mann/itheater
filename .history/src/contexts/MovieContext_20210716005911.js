@@ -15,11 +15,11 @@ const MovieContextProvider = (props) => {
     }
 
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?s=${movie}&apikey=2c0bfe2d`)
+        fetch(`http://www.omdbapi.com/?t=${movie}&apikey=2c0bfe2d`)
             .then(res => res.json())
             .then(data => {
-                setData(data.Search)
-                console.log(data.Search)
+                setData(data)
+                console.log(data.Title)
             })
             .catch(err => console.log(err))
     }, [movie])

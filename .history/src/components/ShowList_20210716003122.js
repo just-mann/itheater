@@ -1,26 +1,26 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import { movieContext } from '../contexts/MovieContext';
-import Header from './Header';
 
 
 const ShowList = () => {
     
     const {data} = useContext(movieContext);
     
-    // const [myData, setMyData] = useState({});
+    const [myData, setMyData] = useState([]);
+
+    useEffect(() => {
+        setMyData(data);
+        console.log(data);
+    }, [data]);
 
     return (
         <div className="ShowList">
-            <Header />
             <h3>Movie Data (List)</h3>
             <div>
                 {data.map(myData => {
                     return(
-                        <div key={myData.imdbID} className="showCard">
-                            <img src={myData.Poster} alt={myData.Title} />
-                            <div>
-                                <h3>{myData.Title}</h3>
-                            </div>
+                        <div key={myData.imdbID}>
+                            <li>{myData.Title}</li>
                         </div>
                     )
                 })}
