@@ -9,8 +9,8 @@ const SideNav = () => {
                 <Link className="app_Logo" to='/'>iTheater</Link>
             </div>
             <div className="links">
-                <Link to='/'>Home <BsArrowRight className="arrows"/></Link>
-                <Link to="/contact">Contact <BsArrowRight className="arrows"/></Link>
+                <Link to='/'>Home <BsArrowRight /></Link>
+                <Link to="/contact">Contact <BsArrowRight /></Link>
             </div>
         </div>
     )

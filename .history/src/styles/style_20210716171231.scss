@@ -123,12 +123,12 @@
         text-align: center;
         font-size: 2em;
         width: 140px;
-        margin: 0.5em auto 1.7em auto;
+        margin: 1em auto;
         // background: rgb(122, 6, 255);
         
         &::after {
             width: 50px;
-            height: 3px;
+            height: 5px;
             margin: 10px auto;
             display: block;
             content: "";

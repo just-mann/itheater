@@ -122,14 +122,12 @@
     > h3 {
         text-align: center;
         font-size: 2em;
-        width: 140px;
-        margin: 0.5em auto 1.7em auto;
-        // background: rgb(122, 6, 255);
+        margin: 1em 0;
+        background: yellow;
         
         &::after {
-            width: 50px;
-            height: 3px;
-            margin: 10px auto;
+            width: 30px;
+            height: 7px;
             display: block;
             content: "";
             border-radius: 1000px;

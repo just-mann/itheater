@@ -122,18 +122,11 @@
     > h3 {
         text-align: center;
         font-size: 2em;
-        width: 140px;
-        margin: 0.5em auto 1.7em auto;
-        // background: rgb(122, 6, 255);
+        margin: 1em 0;
         
         &::after {
-            width: 50px;
-            height: 3px;
-            margin: 10px auto;
-            display: block;
-            content: "";
-            border-radius: 1000px;
-            background: white;
+            width: 30px;
+            color: white;
         }
     }
 }

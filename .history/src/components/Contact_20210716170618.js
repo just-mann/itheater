@@ -31,8 +31,9 @@ const Contact = () => {
                     <div className="contactDet">
                         <h3>Hi There</h3>
                         <p>
-                            I am, and always will be a student of coding, expecially of
-                            Front End Web Development. 
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Deleniti cumque impedit 
+                            est optio!
                             Cumque aliquam asperiores eos, 
                             magni quia quasi molestiae id deserunt, ut 
                             libero blanditiis officia tempora neque ex.

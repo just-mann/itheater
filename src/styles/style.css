@@ -17,7 +17,8 @@ html {
   display: flex;
   height: 65px;
   width: 100%;
-  background: #df3333;
+  background: #c90d0d;
+  opacity: 1;
   padding: 10px;
   z-index: 100;
 }
@@ -70,7 +71,8 @@ html {
 .SideNav .logoDiv {
   width: 100%;
   height: 65px;
-  background: #d31414;
+  background: #c90d0d;
+  opacity: 0.96;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +90,6 @@ html {
 .SideNav .logoDiv .app_Logo {
   text-decoration: none;
   color: white;
-  margin-left: -42px;
   font-size: 1.6rem;
 }
 .SideNav .links {
@@ -100,10 +101,30 @@ html {
   color: white;
   padding: 13px 25px;
   border-radius: -15px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.SideNav .links a .arrows {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
 }
 .SideNav .links a:hover {
-  background: #2f2d4e;
+  color: lightgray;
+  background: #2d2b47;
+}
+.SideNav .links a:hover .arrows {
+  color: lightgray;
+  display: block;
 }
 
 .ShowList, .Contact {
@@ -120,5 +141,83 @@ html {
   min-height: 100vh;
   padding: 3em;
   color: white;
-  background: #343158;
+  background: #2d2b47;
+}
+.rightSide > h3 {
+  text-align: center;
+  font-size: 2em;
+  width: 140px;
+  margin: 0.5em auto 1.7em auto;
+}
+.rightSide > h3::after {
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+  display: block;
+  content: "";
+  border-radius: 1000px;
+  background: white;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3em 2fr;
+  grid-template-columns: 2fr 2fr;
+  gap: 3em;
+  text-align: left;
+  margin: 2em auto;
+}
+.row .contactDet h3 {
+  font-size: 1.5em;
+}
+.row .contactDet p {
+  font-size: 0.99rem;
+}
+.row form label {
+  width: 100%;
+  margin: 2em 0px;
+}
+.row form div {
+  width: 100%;
+  margin: 10px auto;
+}
+.row form div input {
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+.row form div input:focus-within {
+  border: 2px solid white;
+  outline: white;
+}
+.row form div input[type=submit] {
+  font-size: 1em;
+  border: 3px solid white;
+  color: #343158;
+  background: white;
+  font-weight: bold;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.row form div input[type=submit]:hover {
+  cursor: pointer;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+}
+.row form div textarea {
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+.row form div textarea:focus-within {
+  border: 2px solid white;
+  outline: white;
 }

@@ -26,13 +26,14 @@ const Contact = () => {
             <Header />
             <SideNav />
             <div className="rightSide">
-                <h3>Feedback</h3>
+                <h3>Contact Component</h3>
                 <div className="row">
                     <div className="contactDet">
                         <h3>Hi There</h3>
                         <p>
-                            I am, and always will be a student of coding, expecially of
-                            Front End Web Development. 
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Deleniti cumque impedit 
+                            est optio!
                             Cumque aliquam asperiores eos, 
                             magni quia quasi molestiae id deserunt, ut 
                             libero blanditiis officia tempora neque ex.
@@ -41,11 +42,11 @@ const Contact = () => {
                     <form onSubmit={sendMessage}>
                         <div>
                             {/* <label htmlFor="name">Name</label> */}
-                            <input type="text" name="name" id="name" placeholder="Enter Your Name"/>
+                            <input type="text" name="name" id="name" placeholder="Enter your name"/>
                         </div>
                         <div>
                             {/* <label htmlFor="email">Email</label> */}
-                            <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+                            <input type="email" name="email" id="email" placeholder="Enter your email"/>
                         </div>
                         <div>
                             {/* <label htmlFor="message">Message</label> */}
