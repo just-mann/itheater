@@ -8,7 +8,7 @@ const Contact = () => {
         // Prevent default refresh
         e.prevendDefault();
 
-        emailjs.sendForm('i_theater', "i_theater_app1245", e.target, 'user_q41WWjjATyZnRcd2GzQuI')
+        emailjs.sendForm('i_theater', "Your_Template_Id", e.target, 'user_q41WWjjATyZnRcd2GzQuI')
             .then(result => {
                 console.log(result);
             }, (error) => {

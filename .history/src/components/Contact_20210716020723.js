@@ -8,7 +8,7 @@ const Contact = () => {
         // Prevent default refresh
         e.prevendDefault();
 
-        emailjs.sendForm('i_theater', "i_theater_app1245", e.target, 'user_q41WWjjATyZnRcd2GzQuI')
+        emailjs.sendForm('i_theater', "template_ch3vewi", e.target, 'user_q41WWjjATyZnRcd2GzQuI')
             .then(result => {
                 console.log(result);
             }, (error) => {
@@ -38,6 +38,8 @@ const Contact = () => {
                     <div>
                         <input type="submit" value="Send Message" />
                     </div>
+                    <br />
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 </form>
             </div>
         </div>
