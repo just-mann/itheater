@@ -1,0 +1,12 @@
+@import 'default_styles';
+
+
+.Header {
+    background: $nav__color;
+
+    .my_container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 40px;
+    }
+}

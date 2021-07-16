@@ -1,0 +1,31 @@
+@import 'default_styles';
+
+
+.Header {
+    background: $nav__color;
+    padding: 5px 15px;
+
+    .my_container {
+        @include flex(row, space-between, center);
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 20px;
+
+        .app_Logo {
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        .Search {
+            margin-right: auto;
+            margin-left: 7em;
+            form {
+
+                input {
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+}

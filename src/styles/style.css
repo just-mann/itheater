@@ -10,5 +10,115 @@ html {
 }
 
 .Header {
-  background: #EE005F;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  width: 100%;
+  background: #df3333;
+  padding: 10px;
+  z-index: 100;
+}
+.Header .my_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.Header .my_container .dummyElement {
+  width: 15%;
+  text-align: center;
+  opacity: 1;
+  height: 100%;
+  padding: 15px 0px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.Header .my_container .Search {
+  width: 85%;
+  margin-right: auto;
+  margin-left: 3em;
+}
+.Header .my_container .Search form input {
+  padding: 5px 15px;
+}
+
+.SideNav {
+  position: fixed;
+  bottom: 0;
+  float: left;
+  background: #191830;
+  padding: 0px 0 25px 0;
+  width: 15%;
+  height: 100vh;
+  z-index: 150;
+}
+.SideNav .logoDiv {
+  width: 100%;
+  height: 65px;
+  background: #d31414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.SideNav .logoDiv .app_Logo {
+  text-decoration: none;
+  color: white;
+  margin-left: -42px;
+  font-size: 1.6rem;
+}
+.SideNav .links {
+  margin: 3em 0;
+}
+.SideNav .links a {
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  padding: 13px 25px;
+  border-radius: -15px;
+  display: block;
+}
+.SideNav .links a:hover {
+  background: #2f2d4e;
+}
+
+.ShowList, .Contact {
+  padding: 4em 0;
+  margin-top: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.rightSide {
+  float: right;
+  margin: 0 auto;
+  width: 85%;
+  min-height: 100vh;
+  padding: 3em;
+  color: white;
+  background: #343158;
 }

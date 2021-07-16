@@ -1,0 +1,20 @@
+@import 'default_styles';
+
+
+.Header {
+    background: $nav__color;
+    padding: 10px 0px;
+
+    .my_container {
+        @include flex(row, space-between, center);
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 40px;
+
+        .app_Logo {
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+}
