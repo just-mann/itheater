@@ -227,6 +227,7 @@ html {
   font-weight: bold;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
+  margin: 1em 0 0 0;
 }
 .row form div input[type=submit]:hover {
   cursor: pointer;
