@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --animate-duration: 2s;
+    scroll-behavior: smooth;
+}
+
+@import 'my_mixins';
+
+$nav__color: #EE005F;
+$primary__font: 'Roboto', sans-serif;
+$logo__font: 'Otomanopee One', sans-serif;

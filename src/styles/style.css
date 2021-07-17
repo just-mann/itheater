@@ -6,6 +6,7 @@
 }
 
 html {
+  --animate-duration: 2s;
   scroll-behavior: smooth;
 }
 
@@ -71,7 +72,8 @@ html {
 .SideNav .logoDiv {
   width: 100%;
   height: 65px;
-  background: #c90d0d;
+  background: #ffffff;
+  border: 5px solid white;
   opacity: 0.96;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,17 +90,22 @@ html {
           align-items: center;
 }
 .SideNav .logoDiv .app_Logo {
+  font-family: "Bungee Inline", cursive;
   text-decoration: none;
-  color: white;
+  color: #c90d0d;
   font-size: 1.6rem;
 }
 .SideNav .links {
-  margin: 3em 0;
+  margin: 2.5em 0 3em 0;
 }
 .SideNav .links a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-decoration: none;
+  letter-spacing: 1px;
   text-align: left;
-  color: white;
+  color: #dfdfdf;
   padding: 13px 25px;
   border-radius: -15px;
   display: -webkit-box;
@@ -114,17 +121,20 @@ html {
   transition: 0.5s;
 }
 .SideNav .links a .arrows {
+  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  display: none;
 }
 .SideNav .links a:hover {
   color: lightgray;
   background: #2d2b47;
+  border-left: #ffffff solid 5px;
 }
 .SideNav .links a:hover .arrows {
   color: lightgray;
   display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .ShowList, .Contact {
@@ -144,10 +154,13 @@ html {
   background: #2d2b47;
 }
 .rightSide > h3 {
-  text-align: center;
+  font-family: "Roboto", sans-serif;
   font-size: 2em;
+  font-weight: bold;
+  text-align: center;
   width: 140px;
-  margin: 0.5em auto 1.7em auto;
+  letter-spacing: 1.5px;
+  margin: 0 auto 1.7em auto;
 }
 .rightSide > h3::after {
   width: 50px;
@@ -169,25 +182,30 @@ html {
   margin: 2em auto;
 }
 .row .contactDet h3 {
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
+  letter-spacing: 1px;
+  margin: 0 0 0.8em 0;
 }
 .row .contactDet p {
-  font-size: 0.99rem;
-}
-.row form label {
-  width: 100%;
-  margin: 2em 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  color: lightgray;
 }
 .row form div {
   width: 100%;
-  margin: 10px auto;
+  margin: 12px auto;
 }
 .row form div input {
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: white;
   background: transparent;
   width: 100%;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border: 2px solid white;
 }
 .row form div input:focus-within {
@@ -220,4 +238,9 @@ html {
 .row form div textarea:focus-within {
   border: 2px solid white;
   outline: white;
+}
+
+.ShowList .rightSide > div h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
 }

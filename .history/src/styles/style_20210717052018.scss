@@ -1,0 +1,266 @@
+@import 'default_styles';
+
+
+.Header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background: #c90d0d;
+    opacity: 1;
+    padding: 10px;
+    z-index: 100;
+    
+
+    .my_container {
+        @include flex(row, space-between, center);
+        width: 100%;
+        margin: 0 auto;
+        // padding: 0px 35px;
+
+        .dummyElement {
+            width: 15%;
+            text-align: center;
+            opacity: 1;
+            height: 100%;
+            padding: 15px 0px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+
+        }
+
+        .Search {
+            width: 85%;
+            margin-right: auto;
+            margin-left: 3em;
+            form {
+
+                input {
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+}
+
+.SideNav {
+    position: fixed;
+    bottom: 0;
+    float: left;
+    background: #191830;
+    padding: 0px 0 25px 0;
+    width: 15%;
+    height: 100vh;
+    z-index: 150;
+    
+    .logoDiv {
+        width: 100%;
+        height: 65px;
+        background: #ffffff;
+        border: 5px solid white;
+        opacity: 0.96;
+        @include flex(column, center, center);
+
+        .app_Logo {
+            font-family: $logo__font;
+            text-decoration: none;
+            color: #c90d0d;
+            font-size: 1.6rem;
+            
+            
+        }
+    }
+
+    .links {
+        margin: 2.5em 0 3em 0;
+
+        a {
+            font-family: $primary__font;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-align: left;
+            color: #dfdfdf;
+            padding: 13px 25px;
+            border-radius: -15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.5s;
+
+            
+
+            .arrows {
+                display: none;
+                transition: 0.5s;
+            }
+
+            &:hover {
+                color: lightgray;
+                background: #2d2b47;
+                border-left: #ffffff solid 5px;
+
+                .arrows {
+                    color: lightgray;
+                    display: block;
+                    transition: 0.5s;
+                }
+            }
+            
+        }
+        
+
+        
+        
+    }
+}
+
+.ShowList, .Contact {
+    padding: 4em 0;
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    
+}
+
+
+
+// Right Side
+.rightSide {
+    float: right;
+    margin: 0 auto;
+    width: 85%;
+    min-height: 100vh;
+    padding: 3em;
+    color: white;
+    background: #2d2b47;
+
+    > h3 {
+        font-family: $primary__font;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        width: 140px;
+        letter-spacing: 1.5px;
+        margin: 0 auto 1.7em auto;
+        // background: rgb(122, 6, 255);
+        
+        &::after {
+            width: 50px;
+            height: 3px;
+            margin: 10px auto;
+            display: block;
+            content: "";
+            border-radius: 1000px;
+            background: white;
+        }
+    }
+}
+
+// Contact Style
+.row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 3em;
+    text-align: left;
+    margin: 2em auto;
+    
+    .contactDet {
+
+        h3 {
+            font-family: $primary__font;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            margin: 0 0 0.8em 0;
+        }
+
+        p {
+            font-family: $primary__font;
+            font-size: 1rem;
+            margin: 10px 0;
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+            color: lightgray;
+        }
+    }
+
+    form {
+        
+        div {
+            width: 100%;
+            margin: 12px auto;
+
+            
+
+            input {
+                font-family: $primary__font;
+                font-size: 1rem;
+                color: white;
+                background: transparent;
+                width: 100%;
+                padding: 15px 20px;
+                border: 2px solid white;
+               
+
+                &:focus-within {
+                    border: 2px solid white;
+                    outline: white;
+                }
+            }
+
+            input[type="submit"] {
+                font-size: 1em;
+                border: 3px solid white;
+                color: #343158;
+                background: white;
+                font-weight: bold;
+                transition: background-color 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    border: 3px solid white;
+                    background: transparent;
+                    color: white;
+                }
+            }
+
+            textarea {
+                font-size: 1rem;
+                color: white;
+                background: transparent;
+                width: 100%;
+                padding: 10px 15px;
+                border: 2px solid white;
+
+                // placeholder {
+                //     color: white;
+                // }
+
+                &:focus-within {
+                    border: 2px solid white;
+                    outline: white;
+                }
+            }
+        }
+    }
+}
+
+
+// Styling the Movie Listing 
+.ShowList {
+
+    .rightSide {
+
+        > div {
+
+            h4 {
+                font-family: $primary__font;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
