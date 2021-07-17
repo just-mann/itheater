@@ -93,7 +93,7 @@ html {
   font-family: "Bungee Inline", cursive;
   text-decoration: none;
   color: #c90d0d;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .SideNav .links {
   margin: 2.5em 0 3em 0;
@@ -121,9 +121,9 @@ html {
   transition: 0.5s;
 }
 .SideNav .links a .arrows {
+  -webkit-transition: display 0.8s;
+  transition: display 0.8s;
   display: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .SideNav .links a:hover {
   color: lightgray;
@@ -132,9 +132,9 @@ html {
 }
 .SideNav .links a:hover .arrows {
   color: lightgray;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .ShowList, .Contact {
@@ -148,7 +148,7 @@ html {
   float: right;
   margin: 0 auto;
   width: 85%;
-  min-height: 100vh;
+  min-height: 90.7vh;
   padding: 3em;
   color: white;
   background: #2d2b47;
@@ -183,17 +183,24 @@ html {
 }
 .row .contactDet h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: bold;
   letter-spacing: 1px;
   margin: 0 0 0.8em 0;
 }
 .row .contactDet p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   margin: 10px 0;
   letter-spacing: 1px;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   color: lightgray;
+}
+.row .contactDet p span {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .row form div {
   width: 100%;
@@ -232,7 +239,7 @@ html {
   color: white;
   background: transparent;
   width: 100%;
-  padding: 10px 15px;
+  padding: 20px;
   border: 2px solid white;
 }
 .row form div textarea:focus-within {
@@ -240,7 +247,66 @@ html {
   outline: white;
 }
 
-.ShowList .rightSide > div h4 {
+.ShowList .rightSide > div .title {
+  font-family: "Train One", cursive;
+  font-size: 2.5rem;
+  margin: 0px 0;
+}
+.ShowList .rightSide > div .searched {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
+  margin: 0.5em 0 0px 0;
+  color: darkgray;
+}
+.ShowList .rightSide > div .searched span {
+  text-transform: capitalize;
+}
+.ShowList .rightSide > div .productDiv {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  max-width: 100%;
+}
+.ShowList .rightSide > div .productDiv .product {
+  text-decoration: none;
+  height: 250px;
+  margin: 1em 1.5em 4em 0;
+  font-weight: 400;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.ShowList .rightSide > div .productDiv .product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ShowList .rightSide > div .productDiv .product .prodTitle {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  margin: 0.4rem 0 0.2rem 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+  text-transform: capitalize;
+}
+.ShowList .rightSide > div .productDiv .product .type {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  margin: 0rem 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: darkgray;
+  text-transform: capitalize;
+}
+.ShowList .rightSide > div .productDiv .product:hover {
+  cursor: pointer;
+}
+.ShowList .rightSide > div .productDiv .product:hover p {
+  font-weight: bold;
 }
