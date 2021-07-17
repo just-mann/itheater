@@ -262,6 +262,11 @@ html {
 .ShowList .rightSide > div .searched span {
   text-transform: capitalize;
 }
+.ShowList .rightSide > div .loading {
+  width: 100%;
+  height: 100%;
+  margin: 15% auto;
+}
 .ShowList .rightSide > div .productDiv {
   display: -ms-grid;
   display: grid;
