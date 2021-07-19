@@ -26,6 +26,7 @@ const MovieContextProvider = (props) => {
                 })
                 .catch(err => {
                     console.log(err)
+                    // setIsPending(true)
                 })
         }, 1000)
     }, [movie])
