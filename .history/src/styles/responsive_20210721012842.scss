@@ -61,7 +61,7 @@
     .SideNav {
         float: none;
         width: 0;
-        display: none;
+        // display: none;
     }
 
     .ShowList, .Contact, .MovieDetail {
@@ -70,7 +70,7 @@
         .rightSide {
             width: 100%;
             float: none;
-            padding: 3em 1.3em;
+            // padding: 3em 1.3em;
 
             .row {
                 grid-template-columns: 1fr;

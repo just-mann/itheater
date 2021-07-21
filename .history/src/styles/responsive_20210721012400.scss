@@ -15,7 +15,7 @@
             align-items : center;
 
             .dummyElement {
-                font-size: 2.7em;
+                font-size: 2.5em;
                 width: 50%;
                 background: yellow;
                 display: flex;
@@ -26,6 +26,7 @@
                 text-decoration: none;
                 color: white;
                 transition: 0.7s;
+                display: block;
 
                 &:hover {
                     cursor: pointer;

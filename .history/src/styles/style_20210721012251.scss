@@ -28,7 +28,11 @@
             padding: 15px 0px;
             text-decoration: none;
             color: white;
+            display: none;
             
+            h3 {
+                font-size: 4rem;
+            }
 
             &:hover {
                 cursor: pointer;

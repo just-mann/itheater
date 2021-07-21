@@ -12,7 +12,9 @@
     padding: 10px;
     z-index: 100;
 
-    
+    .respSideNav {
+        display: none;
+    }
     
 
     .my_container {
@@ -29,6 +31,9 @@
             text-decoration: none;
             color: white;
             
+            h3 {
+                font-size: 4rem;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -127,12 +132,7 @@
     width: 100%;
     min-height: 100vh;
 
-    .Header {
-
-        .respNav {
-            display: none;
-        }
-    }
+    
 
     
 }
