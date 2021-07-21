@@ -1,0 +1,57 @@
+// Responsive Designs - Phone
+@media (max-width: 1100px) {
+    // Header
+    .Header {
+        background: white;
+        color: black;
+        
+        .my_container {
+            @include flex(row, space-between, center);
+
+            .dummyElement {
+                width: 50%;
+                text-align: center;
+                opacity: 1;
+                height: 100%;
+                padding: 15px 0px;
+                text-decoration: none;
+                color: white;
+                font-size: 1.4rem;
+    
+            }
+    
+            .Search {
+                width: 50%;
+                margin-right: auto;
+                margin-left: 3em;
+                form {
+    
+                    input {
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .SideNav {
+        float: none;
+        width: 0;
+        display: none;
+    }
+
+    .ShowList, .Contact, .MovieDetail {
+        height: 100vh;
+
+        .rightSide {
+            width: 100%;
+            float: none;
+            padding: 3em 1.3em;
+
+            .row {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'responsive';
+@import 'my_mixins';
+
+html {
+    --animate-duration: 2s;
+    scroll-behavior: smooth;
+}
+
+
+$nav__color: #EE005F;
+$primary__font: 'Roboto', sans-serif;
+$logo__font: 'Bungee Inline', cursive;
+$misc__font: 'Train One', cursive;

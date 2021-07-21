@@ -9,6 +9,67 @@
   .Header {
     background: white;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .Header .my_container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Header .my_container .dummyElement {
+    font-size: 2.5em;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    opacity: 1;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .Header .my_container .dummyElement:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .Header .my_container .Search {
+    width: 50%;
+  }
+  .Header .my_container .Search form {
+    padding: 0px 50px;
+  }
+  .Header .my_container .Search form span {
+    margin-left: auto;
+  }
+  .Header .my_container .Search form span input {
+    padding: 5px 15px;
   }
 
   .SideNav {
@@ -73,7 +134,12 @@ html {
   padding: 15px 0px;
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+}
+.Header .my_container .dummyElement h3 {
+  font-size: 4rem;
+}
+.Header .my_container .dummyElement:hover {
+  cursor: pointer;
 }
 .Header .my_container .Search {
   width: 85%;
