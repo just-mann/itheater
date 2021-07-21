@@ -11,10 +11,8 @@ const MovieDetail = () => {
             <div className="MovieDetail">
                 <Header />
                 <SideNav />
-                <div className="rightSide">
-                    <Link to='/'>Back to Home</Link>
-                    <h3>Movie Detail</h3>
-                </div>
+                <Link to='/'>Back to Home</Link>
+                <h3>Movie Detail</h3>
             </div>
         </div>
     )

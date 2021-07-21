@@ -1,0 +1,17 @@
+// Responsive Designs - Phone
+@media (max-width: 1100px) {
+    // Header
+    .Header {
+        background: white;
+        color: black;
+    }
+
+    .SideNav {
+        display: none;
+        width: 0;
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+}

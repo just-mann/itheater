@@ -5,6 +5,31 @@
           box-sizing: border-box;
 }
 
+@media (max-width: 1100px) {
+  .Header {
+    background: white;
+    color: black;
+  }
+
+  .SideNav {
+    float: none;
+    width: 0;
+    display: none;
+  }
+
+  .ShowList, .Contact, .MovieDetail {
+    height: 100vh;
+  }
+  .ShowList .rightSide, .Contact .rightSide, .MovieDetail .rightSide {
+    width: 100%;
+    float: none;
+    padding: 3em 1.3em;
+  }
+  .ShowList .rightSide .row, .Contact .rightSide .row, .MovieDetail .rightSide .row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 html {
   --animate-duration: 2s;
   scroll-behavior: smooth;
@@ -372,18 +397,23 @@ html {
 }
 .Search form span input::-webkit-input-placeholder {
   color: #d4bbbb;
+  font-size: 1.1rem;
 }
 .Search form span input::-moz-placeholder {
   color: #d4bbbb;
+  font-size: 1.1rem;
 }
 .Search form span input:-ms-input-placeholder {
   color: #d4bbbb;
+  font-size: 1.1rem;
 }
 .Search form span input::-ms-input-placeholder {
   color: #d4bbbb;
+  font-size: 1.1rem;
 }
 .Search form span input::placeholder {
   color: #d4bbbb;
+  font-size: 1.1rem;
 }
 .Search form span button {
   padding: 5px 10px;

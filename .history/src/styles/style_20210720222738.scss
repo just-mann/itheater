@@ -371,7 +371,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 290px;
+            width: 100px;
             height: 40px;
 
             input {
@@ -379,14 +379,13 @@
                 padding: 10px 0px;
                 color: white;
                 border: none;
-                width: 90%;
+                width: 85%;
                 height: 100%;
                 border-bottom: 1px solid white;
                 outline: none;
 
                 &::placeholder {
                     color: rgb(212, 187, 187);
-                    font-size: 1.1rem;
                 }
             }
 
