@@ -37,8 +37,8 @@ const Search = () => {
             <form onSubmit={handleSubmit}>
                 <span>
                     <input type='search' value={newSearch} placeholder='Search a movie or show' onChange={handleChange}/>
-                    <button><FaSearch className="searchIcon"/></button>
                 </span>
+                <button>Search</button>
             </form>
         </div>
     )

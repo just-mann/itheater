@@ -7,9 +7,9 @@ const MovieDetail = () => {
 
     return (
         <div>
+            <Header />
+            <SideNav />
             <div className="MovieDetail">
-                <Header />
-                <SideNav />
                 <h3>Movie Detail</h3>
             </div>
         </div>

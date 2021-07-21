@@ -340,7 +340,7 @@
                         cursor: pointer;
 
                         img {
-                            @include scale(1.05)
+                            @include scale(1.1)
                         }
                         
                         p {
@@ -358,55 +358,27 @@
 
     form {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
 
         span {
             background: transparent;
-            // border: 2px solid rgb(173, 81, 81);
-            padding: 0px;
-            // border: 2px solid white;
+            border: 2px solid rgb(173, 81, 81);
+            padding: 3px 15px;
             border-radius: 7px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 290px;
-            height: 40px;
+            width: 250px;
+
+            .searchIcon {
+                color:  white;
+            }
 
             input {
                 background: inherit;
-                padding: 10px 0px;
-                color: white;
-                border: none;
-                width: 90%;
-                height: 100%;
-                border-bottom: 1px solid white;
-                outline: none;
-
-                &::placeholder {
-                    color: rgb(212, 187, 187);
-                }
-            }
-
-            button {
-                padding: 5px 10px;
-                height: 100%;
-                width: 15%;
-                background: white;
-                color: red;
-                border: none;
-
-                .searchIcon {
-                    color:  rgb(141, 32, 32);
-                }
-    
-                &:hover {
-                    cursor: pointer;
-                }
             }
         }
-
-        
     }
 }

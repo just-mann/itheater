@@ -36,9 +36,10 @@ const Search = () => {
         <div className="Search">
             <form onSubmit={handleSubmit}>
                 <span>
+                    <FaSearch className="searchIcon"/>
                     <input type='search' value={newSearch} placeholder='Search a movie or show' onChange={handleChange}/>
-                    <button><FaSearch className="searchIcon"/></button>
                 </span>
+                <button>Search</button>
             </form>
         </div>
     )

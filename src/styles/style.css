@@ -287,6 +287,12 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.ShowList .rightSide > div .productDiv .product img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 .ShowList .rightSide > div .productDiv .product .prodTitle {
   font-size: 1em;
@@ -311,8 +317,85 @@ html {
   text-transform: capitalize;
 }
 .ShowList .rightSide > div .productDiv .product:hover {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   cursor: pointer;
+}
+.ShowList .rightSide > div .productDiv .product:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .ShowList .rightSide > div .productDiv .product:hover p {
   font-weight: bold;
+}
+
+.Search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Search form span {
+  background: transparent;
+  padding: 0px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 290px;
+  height: 40px;
+}
+.Search form span input {
+  background: inherit;
+  padding: 10px 0px;
+  color: white;
+  border: none;
+  width: 90%;
+  height: 100%;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.Search form span input::-webkit-input-placeholder {
+  color: #d4bbbb;
+}
+.Search form span input::-moz-placeholder {
+  color: #d4bbbb;
+}
+.Search form span input:-ms-input-placeholder {
+  color: #d4bbbb;
+}
+.Search form span input::-ms-input-placeholder {
+  color: #d4bbbb;
+}
+.Search form span input::placeholder {
+  color: #d4bbbb;
+}
+.Search form span button {
+  padding: 5px 10px;
+  height: 100%;
+  width: 15%;
+  background: white;
+  color: red;
+  border: none;
+}
+.Search form span button .searchIcon {
+  color: #8d2020;
+}
+.Search form span button:hover {
+  cursor: pointer;
 }

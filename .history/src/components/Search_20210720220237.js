@@ -1,7 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react';
 import { useHistory } from 'react-router';
 import {movieContext} from '../contexts/MovieContext';
-import {FaSearch} from 'react-icons/fa';
 
 const Search = () => {
 
@@ -35,10 +34,8 @@ const Search = () => {
     return (
         <div className="Search">
             <form onSubmit={handleSubmit}>
-                <span>
-                    <input type='search' value={newSearch} placeholder='Search a movie or show' onChange={handleChange}/>
-                    <button><FaSearch className="searchIcon"/></button>
-                </span>
+                <span><input type='search' value={newSearch} placeholder='Search a movie or show' onChange={handleChange}/></span>
+                <button>Search</button>
             </form>
         </div>
     )

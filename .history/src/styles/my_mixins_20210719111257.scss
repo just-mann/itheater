@@ -1,0 +1,11 @@
+// FlexBox
+@mixin flex($dir, $jCont, $alItm) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jCont;
+    align-items: $alItm;
+}
+
+@mixin bxShadow {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
