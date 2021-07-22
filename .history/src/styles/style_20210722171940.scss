@@ -442,7 +442,7 @@
 
         .topSection {
             // background: yellow;
-            padding: 4em 0 0 0;
+            padding: 4em 0;
 
             .backLink {
                 font-size: 1.5em;
@@ -458,8 +458,9 @@
                 display: flex;
                 
                 .imgDiv {
+                    background:rgb(212, 187, 187);
                     width: 300px;
-                    height: 450px;
+                    height: 400px;
                     
                     img {
                         width: 100%;
@@ -473,25 +474,6 @@
                     height: 400px;
                     // background: yellow;
                     padding: 5px 2em;
-
-                    h3 {
-                        font-family: $primary__font;
-                        font-size: 2em;
-                        font-weight: bold;
-                        text-align: left;
-                        letter-spacing: 1.5px;
-                        margin: 0 auto 1em auto;
-
-                        &::after {
-                            width: 70px;
-                            height: 6px;
-                            margin: 10px 0 0 0;
-                            display: block;
-                            content: "";
-                            border-radius: 1000px;
-                            background: white;
-                        }
-                    }
 
                 }
             }

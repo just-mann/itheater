@@ -3,13 +3,7 @@ import {Link, useParams} from 'react-router-dom';
 import { movieContext } from '../contexts/MovieContext';
 import Header from './Header';
 import SideNav from './SideNav';
-import {FaArrowLeft} from 'react-icons/fa';
-
-
-
-
-
-
+import $ from 'jquery';
 
 const MovieDetail = () => {
 
@@ -37,28 +31,25 @@ const MovieDetail = () => {
             <Header />
             <SideNav />
             <div className="rightSide">
+                <Link to='/'>Back</Link>
                 <div className="topSection">
-                    <Link to='/' className="backLink"><FaArrowLeft /> Back</Link>
-                    <div className="detRow">
-                        <div className="imgDiv">
-                            <img src={movieImg} alt={movieTitle} />
-                        </div>
-                        <div className="details">
-                            <h3>{movieTitle}</h3>
-                            <p className="">Genre: {movieGenre}</p>
-                            <p>Released: {movieReleasedYear}</p>
-                            <p>Years active: {movieYears}</p>
-                            <p>Rated: {movieRated}</p>
-                            <p>Writer: {movieWriter}</p>
-                            <div className="bottomSection">
-                                <p>Cast: {movieActors}</p>
-                                <p>Awards: {movieAwards}</p>
-                                <p>{moviePlot}</p>
-                            </div>
-                        </div>
+                    <div>
+                        <img src={movieImg} alt={movieTitle} />
+                    </div>
+                    <div>
+                        <p>Genre: {movieGenre}</p>
+                        <p>Released: {movieReleasedYear}</p>
+                        <p>Years active: {movieYears}</p>
+                        <p>Rated: {movieRated}</p>
+                        <p>Writer: {movieWriter}</p>
                     </div>
                 </div>
-                
+                <div className="bottomSection">
+                    <h3>{movieTitle}</h3>
+                    <p>Cast: {movieActors}</p>
+                    <p>Awards: {movieAwards}</p>
+                    <p>{moviePlot}</p>
+                </div>
             </div>
         </div>
     )

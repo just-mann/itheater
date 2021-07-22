@@ -45,7 +45,7 @@ const MovieDetail = () => {
                         </div>
                         <div className="details">
                             <h3>{movieTitle}</h3>
-                            <p className="">Genre: {movieGenre}</p>
+                            <p>Genre: {movieGenre}</p>
                             <p>Released: {movieReleasedYear}</p>
                             <p>Years active: {movieYears}</p>
                             <p>Rated: {movieRated}</p>

@@ -442,7 +442,7 @@
 
         .topSection {
             // background: yellow;
-            padding: 4em 0 0 0;
+            padding: 4em 0;
 
             .backLink {
                 font-size: 1.5em;
@@ -454,13 +454,14 @@
             }
 
             .detRow {
-                padding: 2em 0 0 0;
-                display: flex;
+                padding: 2em 0;
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
                 
                 .imgDiv {
-                    width: 300px;
-                    height: 450px;
-                    
+                    background: yellow;
+                    min-height: 50px;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -469,29 +470,7 @@
                 }
                 
                 .details {
-                    width: 700px;
-                    height: 400px;
-                    // background: yellow;
                     padding: 5px 2em;
-
-                    h3 {
-                        font-family: $primary__font;
-                        font-size: 2em;
-                        font-weight: bold;
-                        text-align: left;
-                        letter-spacing: 1.5px;
-                        margin: 0 auto 1em auto;
-
-                        &::after {
-                            width: 70px;
-                            height: 6px;
-                            margin: 10px 0 0 0;
-                            display: block;
-                            content: "";
-                            border-radius: 1000px;
-                            background: white;
-                        }
-                    }
 
                 }
             }

@@ -45,20 +45,19 @@ const MovieDetail = () => {
                         </div>
                         <div className="details">
                             <h3>{movieTitle}</h3>
-                            <p className="">Genre: {movieGenre}</p>
+                            <p>Genre: {movieGenre}</p>
                             <p>Released: {movieReleasedYear}</p>
                             <p>Years active: {movieYears}</p>
                             <p>Rated: {movieRated}</p>
                             <p>Writer: {movieWriter}</p>
-                            <div className="bottomSection">
-                                <p>Cast: {movieActors}</p>
-                                <p>Awards: {movieAwards}</p>
-                                <p>{moviePlot}</p>
-                            </div>
                         </div>
                     </div>
                 </div>
-                
+                <div className="bottomSection">
+                    <p>Cast: {movieActors}</p>
+                    <p>Awards: {movieAwards}</p>
+                    <p>{moviePlot}</p>
+                </div>
             </div>
         </div>
     )
