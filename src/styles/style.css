@@ -397,7 +397,20 @@ html {
   color: white;
   text-transform: capitalize;
 }
-.ShowList .rightSide > div .productDiv .product .type, .ShowList .rightSide > div .productDiv .product .year {
+.ShowList .rightSide > div .productDiv .product div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7px 0 0;
+}
+.ShowList .rightSide > div .productDiv .product div .type {
   display: inline;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -408,6 +421,10 @@ html {
   transition: 0.5s;
   color: darkgray;
   text-transform: capitalize;
+}
+.ShowList .rightSide > div .productDiv .product div .year {
+  color: darkgray;
+  margin-left: auto;
 }
 .ShowList .rightSide > div .productDiv .product:hover {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -577,7 +594,7 @@ html {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 8px 0;
   font-size: 1em;
 }
 .MovieDetail .rightSide .topSection .detRow .details .cast span {
