@@ -25,7 +25,7 @@ const ShowList = () => {
                         </div>}
                         {data.map(myData => {
                             return(
-                                <Link to={`/detail/${myData.imdbID}`} key={myData.imdbID} className="product">
+                                <Link to={`/detail/${myData.Title}`} key={myData.imdbID} className="product">
                                     <img src={myData.Poster} alt={myData.Title} />
                                     <p className="prodTitle">{myData.Title}</p>
                                     <p className="type">{myData.Type}</p>

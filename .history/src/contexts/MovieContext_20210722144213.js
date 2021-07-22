@@ -6,7 +6,6 @@ const MovieContextProvider = (props) => {
 
     const [movie, setMovie] = useState('house');
     const [isPending, setIsPending] = useState(true);
-    const [isSelected, setIsSelected] = useState('');
 
     // Data to be displayed...
     const [data, setData] = useState([])
@@ -15,7 +14,14 @@ const MovieContextProvider = (props) => {
     const EnterShow = (show) => {
         setMovie(show);
     }
-    
+
+    let str = 'This is my name';
+    var modStr = str.split(' ');
+    for(var i = 0; i < modStr.length -1; i++) {
+        modStr[i] += "+";
+    }
+
+    console.log(modStr);
     
 
     useEffect(() => {
@@ -33,17 +39,8 @@ const MovieContextProvider = (props) => {
         }, 1000)
     }, [movie])
 
-    const showDetail = (id) => {
-        fetch(`https://www.omdbapi.com/?apikey=2c0bfe2d&plot=full&i=${id}`)
-            .then(res => res.json())
-            .then(result => {
-                setIsSelected(result);
-            })
-            .catch(err => console.log(err))
-    }
-
     return (
-        <movieContext.Provider value={{movie, data, EnterShow, isPending, isSelected, showDetail}}>
+        <movieContext.Provider value={{movie, data, EnterShow, isPending}}>
             {data && props.children}
         </movieContext.Provider>
     )

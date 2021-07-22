@@ -31,11 +31,11 @@ const MovieDetail = () => {
             <Header />
             <SideNav />
             <div className="rightSide">
+            <Link to='/'>Back</Link>
                 <div className="topSection">
                     <div>
                         <img src={movieImg} alt={movieTitle} />
                     </div>
-                    <Link to='/'>Back</Link>
                     <div>
                         <p>Genre: {movieGenre}</p>
                         <p>Released: {movieReleasedYear}</p>

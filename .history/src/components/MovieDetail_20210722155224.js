@@ -27,28 +27,23 @@ const MovieDetail = () => {
         
 
     return (
-        <div className="MovieDetail">
-            <Header />
-            <SideNav />
-            <div className="rightSide">
-                <div className="topSection">
+        <div>
+            <div className="MovieDetail">
+                <Header />
+                <SideNav />
+                <div className="rightSide">
                     <div>
-                        <img src={movieImg} alt={movieTitle} />
+                        <div>
+                            <img src={movieImg} alt={movieTitle} />
+                        </div>
+                        <div>
+                            <p>Genre: {movieGenre}</p>
+                            <p>Released: {movieReleasedYear}</p>
+                            <p>Years: {movieYears}</p>
+                            <p>Rated: {movieRated}</p>
+                            <p></p>
+                        </div>
                     </div>
-                    <Link to='/'>Back</Link>
-                    <div>
-                        <p>Genre: {movieGenre}</p>
-                        <p>Released: {movieReleasedYear}</p>
-                        <p>Years active: {movieYears}</p>
-                        <p>Rated: {movieRated}</p>
-                        <p>Writer: {movieWriter}</p>
-                    </div>
-                </div>
-                <div className="bottomSection">
-                    <h3>{movieTitle}</h3>
-                    <p>Cast: {movieActors}</p>
-                    <p>Awards: {movieAwards}</p>
-                    <p>{moviePlot}</p>
                 </div>
             </div>
         </div>

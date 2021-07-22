@@ -29,7 +29,6 @@ const ShowList = () => {
                                     <img src={myData.Poster} alt={myData.Title} />
                                     <p className="prodTitle">{myData.Title}</p>
                                     <p className="type">{myData.Type}</p>
-                                    <p className="year">{myData.Year}</p>
                                 </Link>
                             )
                         })}

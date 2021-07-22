@@ -17,7 +17,7 @@ const App = () => {
             <Route exact path='/contact'>
               <Contact />
             </Route>
-            <Route exact path='/detail/:id'>
+            <Route exact path='/detail/:title'>
               <MovieDetail />
             </Route>
           </Switch>

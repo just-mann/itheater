@@ -32,10 +32,10 @@ const MovieDetail = () => {
             <SideNav />
             <div className="rightSide">
                 <div className="topSection">
+                    <Link to='/'>Back</Link>
                     <div>
                         <img src={movieImg} alt={movieTitle} />
                     </div>
-                    <Link to='/'>Back</Link>
                     <div>
                         <p>Genre: {movieGenre}</p>
                         <p>Released: {movieReleasedYear}</p>

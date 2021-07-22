@@ -34,12 +34,14 @@ const MovieContextProvider = (props) => {
     }, [movie])
 
     const showDetail = (id) => {
-        fetch(`https://www.omdbapi.com/?apikey=2c0bfe2d&plot=full&i=${id}`)
+        fetch(`https://www.omdbapi.com/?apikey=2c0bfe2d&i=${id}`)
             .then(res => res.json())
             .then(result => {
+                console.log(result);
                 setIsSelected(result);
             })
             .catch(err => console.log(err))
+        
     }
 
     return (

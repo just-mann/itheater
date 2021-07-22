@@ -6,7 +6,6 @@ const MovieContextProvider = (props) => {
 
     const [movie, setMovie] = useState('house');
     const [isPending, setIsPending] = useState(true);
-    const [isSelected, setIsSelected] = useState('');
 
     // Data to be displayed...
     const [data, setData] = useState([])
@@ -33,17 +32,12 @@ const MovieContextProvider = (props) => {
         }, 1000)
     }, [movie])
 
-    const showDetail = (id) => {
-        fetch(`https://www.omdbapi.com/?apikey=2c0bfe2d&plot=full&i=${id}`)
-            .then(res => res.json())
-            .then(result => {
-                setIsSelected(result);
-            })
-            .catch(err => console.log(err))
+    const showDetail = async (id) => {
+        const response = await fetch()
     }
 
     return (
-        <movieContext.Provider value={{movie, data, EnterShow, isPending, isSelected, showDetail}}>
+        <movieContext.Provider value={{movie, data, EnterShow, isPending}}>
             {data && props.children}
         </movieContext.Provider>
     )

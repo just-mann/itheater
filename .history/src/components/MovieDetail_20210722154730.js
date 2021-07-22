@@ -17,7 +17,7 @@ const MovieDetail = () => {
     const movieTitle = `${isSelected.Title}`;
     const movieImg = `${isSelected.Poster}`;
     const movieYears = `${isSelected.Year}`;
-    const movieGenre = `${isSelected.Genre}`;
+    const movieGenre = `${isSelected.Plot}`;
     const moviePlot = `${isSelected.Plot}`;
     const movieReleasedYear = `${isSelected.Released}`;
     const movieRated = `${isSelected.Rated}`;
@@ -27,28 +27,23 @@ const MovieDetail = () => {
         
 
     return (
-        <div className="MovieDetail">
-            <Header />
-            <SideNav />
-            <div className="rightSide">
-                <div className="topSection">
+        <div>
+            <div className="MovieDetail">
+                <Header />
+                <SideNav />
+                <div className="detailDiv">
                     <div>
-                        <img src={movieImg} alt={movieTitle} />
+                        <div>
+                            <img src={movieImg} alt={movieTitle} />
+                        </div>
+                        <div>
+                            <p>{movieGenre}</p>
+                            <p>{movieReleasedYear}</p>
+                            <p>{movieYears}</p>
+                            <p>{movieRated}</p>
+                            <p></p>
+                        </div>
                     </div>
-                    <Link to='/'>Back</Link>
-                    <div>
-                        <p>Genre: {movieGenre}</p>
-                        <p>Released: {movieReleasedYear}</p>
-                        <p>Years active: {movieYears}</p>
-                        <p>Rated: {movieRated}</p>
-                        <p>Writer: {movieWriter}</p>
-                    </div>
-                </div>
-                <div className="bottomSection">
-                    <h3>{movieTitle}</h3>
-                    <p>Cast: {movieActors}</p>
-                    <p>Awards: {movieAwards}</p>
-                    <p>{moviePlot}</p>
                 </div>
             </div>
         </div>
