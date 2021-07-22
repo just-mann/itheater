@@ -501,16 +501,20 @@ html {
   cursor: pointer;
 }
 
+.MovieDetail {
+  min-height: 100vh;
+}
 .MovieDetail .rightSide {
   float: right;
   margin: 0 auto;
   width: 85%;
-  min-height: 100vh;
+  height: auto;
   padding: 3em;
   color: white;
   background: #2d2b47;
 }
 .MovieDetail .rightSide .topSection {
+  height: 100%;
   padding: 4em 0 0 0;
 }
 .MovieDetail .rightSide .topSection .backLink {
@@ -528,6 +532,7 @@ html {
   text-decoration: none;
 }
 .MovieDetail .rightSide .topSection .detRow {
+  height: 100%;
   padding: 2em 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,23 +550,45 @@ html {
 }
 .MovieDetail .rightSide .topSection .detRow .details {
   width: 700px;
-  height: 400px;
+  height: auto;
   padding: 5px 2em;
+  font-family: "Roboto", sans-serif;
+  color: #f1f1f1;
 }
-.MovieDetail .rightSide .topSection .detRow .details h3 {
+.MovieDetail .rightSide .topSection .detRow .details .title {
+  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   font-weight: bold;
   text-align: left;
   letter-spacing: 1.5px;
-  margin: 0 auto 1em auto;
+  margin: 0 auto 15px auto;
 }
-.MovieDetail .rightSide .topSection .detRow .details h3::after {
-  width: 70px;
+.MovieDetail .rightSide .topSection .detRow .details .title::after {
+  width: 55px;
   height: 6px;
   margin: 10px 0 0 0;
   display: block;
   content: "";
   border-radius: 1000px;
   background: white;
+}
+.MovieDetail .rightSide .topSection .detRow .details .genre, .MovieDetail .rightSide .topSection .detRow .details .awards, .MovieDetail .rightSide .topSection .detRow .details .released, .MovieDetail .rightSide .topSection .detRow .details .year, .MovieDetail .rightSide .topSection .detRow .details .rated, .MovieDetail .rightSide .topSection .detRow .details .writer, .MovieDetail .rightSide .topSection .detRow .details .cast {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 1em;
+}
+.MovieDetail .rightSide .topSection .detRow .details .cast span {
+  font-size: 1.09em;
+  letter-spacing: 1.2px;
+}
+.MovieDetail .rightSide .topSection .detRow .details .bottomSection {
+  margin: 30px 0 0 0;
+  color: #f1f1f1;
+}
+.MovieDetail .rightSide .topSection .detRow .details .bottomSection .plot {
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
 }

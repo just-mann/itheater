@@ -436,13 +436,14 @@
         float: right;
         margin: 0 auto;
         width: 85%;
-        height: auto;
+        min-height: 100vh;
         padding: 3em;
         color: white;
         background: #2d2b47;
 
         .topSection {
-            height: 100%;
+            min-height: 100%;
+            // background: yellow;
             padding: 4em 0 0 0;
 
             .backLink {
@@ -455,7 +456,6 @@
             }
 
             .detRow {
-                height: 100%;
                 padding: 2em 0 0 0;
                 display: flex;
                 
@@ -472,7 +472,7 @@
                 
                 .details {
                     width: 700px;
-                    height: auto;
+                    height: 400px;
                     padding: 5px 2em;
                     font-family: $primary__font;
                     color: #f1f1f1;

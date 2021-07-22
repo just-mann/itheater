@@ -436,10 +436,10 @@
         float: right;
         margin: 0 auto;
         width: 85%;
-        height: auto;
+        height: 100%;
         padding: 3em;
         color: white;
-        background: #2d2b47;
+        background: #b31991;
 
         .topSection {
             height: 100%;
@@ -455,7 +455,7 @@
             }
 
             .detRow {
-                height: 100%;
+                min-height: 100%;
                 padding: 2em 0 0 0;
                 display: flex;
                 
@@ -472,7 +472,7 @@
                 
                 .details {
                     width: 700px;
-                    height: auto;
+                    height: 400px;
                     padding: 5px 2em;
                     font-family: $primary__font;
                     color: #f1f1f1;

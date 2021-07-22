@@ -50,10 +50,10 @@ const MovieDetail = () => {
                             <p className="year">Years active: {movieYears}</p>
                             <p className="rated">Rated: {movieRated}</p>
                             <p className="writer">Writer: {movieWriter}</p>
-                            <p className="cast">Cast: <span>{movieActors}</span></p>
+                            <p className="cast">Cast: {movieActors}</p>
                             <p className="awards">Awards: {movieAwards}</p>
                             <div className="bottomSection">
-                                <p className="plot">{moviePlot}</p>
+                                <p className="pilot">{moviePlot}</p>
                             </div>
                         </div>
                     </div>
