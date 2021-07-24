@@ -17,6 +17,7 @@
             .dummyElement {
                 font-size: 2.7em;
                 width: 50%;
+                background: yellow;
                 display: flex;
                 justify-content: center;
                 text-align: center;
@@ -72,7 +73,56 @@
             }
         }
     }
-    
-    
+
+    // Movie Detail
+    .MovieDetail {
+        min-height: 100vh;
+        
+        .rightSide {
+            float: right;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            padding: 3em;
+            color: white;
+            background: #2d2b47;
+
+            .topSection {
+                height: 100%;
+                padding: 4em 0 0 0;
+
+                .backLink {
+                    font-size: 1.5em;
+                    color: white;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-decoration: none;
+                }
+
+                .detRow {
+                    height: 100%;
+                    padding: 2em 0 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .imgDiv {
+                        width: 100%;
+                        height: 450px;
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                    .details {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
     
 }

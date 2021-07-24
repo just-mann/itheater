@@ -359,7 +359,18 @@
                             margin-left: auto;
                         }
                     }
-                    
+
+                    .btnDiv {
+                        width: 100%;
+                        margin: 10px 0;
+
+                        a {
+                            width: 100%;
+                            background: white;
+                            color: #2d2b47;
+                            padding: 5px 15px;
+                        }
+                    }
 
                     
                     &:hover {
@@ -473,8 +484,8 @@
                 display: flex;
                 
                 .imgDiv {
-                    width: 350px;
-                    height: 500px;
+                    width: 300px;
+                    height: 450px;
                     
                     img {
                         width: 100%;

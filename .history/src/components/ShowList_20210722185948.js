@@ -30,6 +30,9 @@ const ShowList = () => {
                                         <p className="type">{myData.Type}</p>
                                         <p className="year">{myData.Year}</p>
                                     </div>
+                                    <div className="btnDiv">
+                                        <Link to={`/detail/${myData.imdbID}`}>Read More</Link>
+                                    </div>
                                 </Link>
                             )
                         })}

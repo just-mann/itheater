@@ -40,7 +40,6 @@
   .Header .my_container .dummyElement {
     font-size: 2.7em;
     width: 50%;
-    background: yellow;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -369,7 +368,7 @@ html {
 .ShowList .rightSide > div .productDiv .product {
   text-decoration: none;
   height: 250px;
-  margin: 1em 1.5em 4em 0;
+  margin: 1em 1.5em 5em 0;
   font-weight: 400;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -397,7 +396,7 @@ html {
   color: white;
   text-transform: capitalize;
 }
-.ShowList .rightSide > div .productDiv .product div {
+.ShowList .rightSide > div .productDiv .product .infoDiv {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,7 +409,7 @@ html {
           align-items: center;
   padding: 0 7px 0 0;
 }
-.ShowList .rightSide > div .productDiv .product div .type {
+.ShowList .rightSide > div .productDiv .product .infoDiv .type {
   display: inline;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -422,7 +421,7 @@ html {
   color: darkgray;
   text-transform: capitalize;
 }
-.ShowList .rightSide > div .productDiv .product div .year {
+.ShowList .rightSide > div .productDiv .product .infoDiv .year {
   color: darkgray;
   margin-left: auto;
 }
@@ -556,8 +555,8 @@ html {
   display: flex;
 }
 .MovieDetail .rightSide .topSection .detRow .imgDiv {
-  width: 300px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
 }
 .MovieDetail .rightSide .topSection .detRow .imgDiv img {
   width: 100%;
