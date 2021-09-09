@@ -9,4 +9,150 @@ html {
   --animate-duration: 2s;
   scroll-behavior: smooth;
 }
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  background-color: #EE005F;
+  padding: 1rem 1.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 55.375rem) {
+  .header {
+    padding: 1rem 1.1rem;
+  }
+}
+
+.header .my_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .my_container .app_Logo {
+  color: #ffffff;
+  font-family: "Bungee Inline", cursive;
+  font-size: 2rem;
+  display: block;
+}
+
+@media (max-width: 55.375rem) {
+  .header .my_container .app_Logo {
+    display: none;
+  }
+}
+
+.header .my_container .hamburger {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2.3rem;
+  display: none;
+}
+
+@media (max-width: 55.375rem) {
+  .header .my_container .hamburger {
+    display: block;
+  }
+}
+
+.header .my_container .search form {
+  margin: 0;
+  border: 2px solid #ffffff;
+  padding: 0 0 0 15px;
+}
+
+.header .my_container .search form span {
+  padding: 0;
+  margin: 0;
+}
+
+.header .my_container .search form span input {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.header .my_container .search form span input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.header .my_container .search form span input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.header .my_container .search form span input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.header .my_container .search form span input::placeholder {
+  color: #ffffff;
+}
+
+.header .my_container .search form span button {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 7px 9px;
+  border: 2px solid #ffffff;
+}
+
+@media (max-width: 55.375rem) {
+  .sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    min-height: 100vh;
+    padding: 4.3rem 0;
+    background-color: #EE005F;
+  }
+  .sideNav .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sideNav .links a {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    padding: 0.85rem 2rem;
+    font-size: 1.4rem;
+  }
+  .sideNav .links a:hover {
+    background-color: black;
+  }
+}
+
+@media (min-width: 90rem) {
+  .sideNav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

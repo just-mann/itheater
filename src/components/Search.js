@@ -29,7 +29,7 @@ const Search = () => {
     }
 
     return (
-        <div className="Search">
+        <div className="search">
             <form onSubmit={handleSubmit}>
                 <span>
                     <input type='search' value={newSearch} placeholder='Search a movie or show' onChange={handleChange}/>

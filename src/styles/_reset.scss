@@ -9,8 +9,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
+
+a {
+    text-decoration: none;
+}
 
 $nav__color: #EE005F;
+$white: #ffffff;
 $primary__font: 'Roboto', sans-serif;
 $logo__font: 'Bungee Inline', cursive;
 $misc__font: 'Train One', cursive;

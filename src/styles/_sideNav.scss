@@ -1,0 +1,40 @@
+@import 'mixins';
+
+
+@include breakpoint-mobile(mobile) {
+    .sideNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 180px;
+        min-height: 100vh;
+        padding: 4.3rem 0;
+        background-color: $nav__color;
+
+
+        .links {
+            display: flex;
+            flex-direction: column;
+
+
+            a {
+                font-family: $primary__font;
+                color: $white;
+                padding: 0.85rem 2rem;
+                font-size: 1.4rem;
+
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+    
+    }
+}
+
+
+@include breakpoint-desktop(desktop) {
+    .sideNav {
+        display: none;
+    }
+}
