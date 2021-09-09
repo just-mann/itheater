@@ -71,13 +71,11 @@
   .Header .my_container .Search form span input {
     padding: 5px 15px;
   }
-
   .SideNav {
     float: none;
     width: 0;
     display: none;
   }
-
   .ShowList, .Contact, .MovieDetail {
     height: 100vh;
   }
@@ -88,9 +86,10 @@
   }
   .ShowList .rightSide .row, .Contact .rightSide .row, .MovieDetail .rightSide .row {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
+
 html {
   --animate-duration: 2s;
   scroll-behavior: smooth;
@@ -109,6 +108,7 @@ html {
   padding: 10px;
   z-index: 100;
 }
+
 .Header .my_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +126,7 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+
 .Header .my_container .dummyElement {
   width: 15%;
   text-align: center;
@@ -135,14 +136,17 @@ html {
   text-decoration: none;
   color: white;
 }
+
 .Header .my_container .dummyElement:hover {
   cursor: pointer;
 }
+
 .Header .my_container .Search {
   width: 85%;
   margin-right: auto;
   margin-left: 3em;
 }
+
 .Header .my_container .Search form input {
   padding: 5px 15px;
 }
@@ -157,6 +161,13 @@ html {
   height: 100vh;
   z-index: 150;
 }
+
+@media (max-width: 40.375rem) {
+  .SideNav {
+    display: none;
+  }
+}
+
 .SideNav .logoDiv {
   width: 100%;
   height: 65px;
@@ -177,15 +188,18 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .SideNav .logoDiv .app_Logo {
   font-family: "Bungee Inline", cursive;
   text-decoration: none;
   color: #c90d0d;
   font-size: 1.8rem;
 }
+
 .SideNav .links {
   margin: 2.5em 0 3em 0;
 }
+
 .SideNav .links a {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
@@ -208,16 +222,19 @@ html {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .SideNav .links a .arrows {
   -webkit-transition: display 0.8s;
   transition: display 0.8s;
   display: none;
 }
+
 .SideNav .links a:hover {
   color: lightgray;
   background: #2d2b47;
   border-left: #ffffff solid 5px;
 }
+
 .SideNav .links a:hover .arrows {
   color: lightgray;
   -webkit-transition: 0.8s;
@@ -231,6 +248,7 @@ html {
   width: 100%;
   min-height: 100vh;
 }
+
 .ShowList .Header .respNav, .Contact .Header .respNav {
   display: none;
 }
@@ -244,6 +262,7 @@ html {
   color: white;
   background: #2d2b47;
 }
+
 .rightSide > h3 {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
@@ -253,6 +272,7 @@ html {
   letter-spacing: 1.5px;
   margin: 0 auto 1.7em auto;
 }
+
 .rightSide > h3::after {
   width: 50px;
   height: 3px;
@@ -266,12 +286,13 @@ html {
 .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3em 2fr;
-  grid-template-columns: 2fr 2fr;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
   gap: 3em;
   text-align: left;
   margin: 2em auto;
 }
+
 .row .contactDet h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6em;
@@ -279,6 +300,7 @@ html {
   letter-spacing: 1px;
   margin: 0 0 0.8em 0;
 }
+
 .row .contactDet p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -287,16 +309,19 @@ html {
   line-height: 1.5em;
   color: lightgray;
 }
+
 .row .contactDet p span {
   color: white;
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .row form div {
   width: 100%;
   margin: 12px auto;
 }
+
 .row form div input {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -306,11 +331,13 @@ html {
   padding: 15px 20px;
   border: 2px solid white;
 }
+
 .row form div input:focus-within {
   border: 2px solid white;
   outline: white;
 }
-.row form div input[type=submit] {
+
+.row form div input[type="submit"] {
   font-size: 1em;
   border: 3px solid white;
   color: #343158;
@@ -320,12 +347,14 @@ html {
   transition: background-color 0.5s;
   margin: 1em 0 0 0;
 }
-.row form div input[type=submit]:hover {
+
+.row form div input[type="submit"]:hover {
   cursor: pointer;
   border: 3px solid white;
   background: transparent;
   color: white;
 }
+
 .row form div textarea {
   font-size: 1rem;
   color: white;
@@ -334,6 +363,7 @@ html {
   padding: 20px;
   border: 2px solid white;
 }
+
 .row form div textarea:focus-within {
   border: 2px solid white;
   outline: white;
@@ -344,27 +374,33 @@ html {
   font-size: 2.5rem;
   margin: 0px 0;
 }
+
 .ShowList .rightSide > div .searched {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   margin: 0.5em 0 0px 0;
   color: darkgray;
 }
+
 .ShowList .rightSide > div .searched span {
   text-transform: capitalize;
 }
+
 .ShowList .rightSide > div .loading {
   width: 100%;
   height: 100%;
   margin: 15% auto;
 }
+
 .ShowList .rightSide > div .productDiv {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   max-width: 100%;
 }
+
 .ShowList .rightSide > div .productDiv .product {
   text-decoration: none;
   height: 250px;
@@ -373,6 +409,7 @@ html {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+
 .ShowList .rightSide > div .productDiv .product img {
   width: 100%;
   height: 100%;
@@ -381,10 +418,12 @@ html {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+
 .ShowList .rightSide > div .productDiv .product img:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
+
 .ShowList .rightSide > div .productDiv .product .prodTitle {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -396,6 +435,7 @@ html {
   color: white;
   text-transform: capitalize;
 }
+
 .ShowList .rightSide > div .productDiv .product .infoDiv {
   width: 100%;
   display: -webkit-box;
@@ -409,6 +449,7 @@ html {
           align-items: center;
   padding: 0 7px 0 0;
 }
+
 .ShowList .rightSide > div .productDiv .product .infoDiv .type {
   display: inline;
   font-size: 1em;
@@ -421,22 +462,27 @@ html {
   color: darkgray;
   text-transform: capitalize;
 }
+
 .ShowList .rightSide > div .productDiv .product .infoDiv .year {
   color: darkgray;
   margin-left: auto;
 }
+
 .ShowList .rightSide > div .productDiv .product:hover {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   cursor: pointer;
 }
+
 .ShowList .rightSide > div .productDiv .product:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+
 .ShowList .rightSide > div .productDiv .product:hover p {
   font-weight: bold;
 }
+
 .ShowList .rightSide .topSection {
   padding: 4em 3em;
 }
@@ -452,6 +498,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .Search form span {
   background: transparent;
   padding: 0px;
@@ -472,6 +519,7 @@ html {
   width: 290px;
   height: 40px;
 }
+
 .Search form span input {
   background: inherit;
   padding: 10px 0px;
@@ -482,26 +530,27 @@ html {
   border-bottom: 1px solid white;
   outline: none;
 }
+
 .Search form span input::-webkit-input-placeholder {
   color: #d4bbbb;
   font-size: 1.1rem;
 }
-.Search form span input::-moz-placeholder {
-  color: #d4bbbb;
-  font-size: 1.1rem;
-}
+
 .Search form span input:-ms-input-placeholder {
   color: #d4bbbb;
   font-size: 1.1rem;
 }
+
 .Search form span input::-ms-input-placeholder {
   color: #d4bbbb;
   font-size: 1.1rem;
 }
+
 .Search form span input::placeholder {
   color: #d4bbbb;
   font-size: 1.1rem;
 }
+
 .Search form span button {
   padding: 5px 10px;
   height: 100%;
@@ -510,9 +559,11 @@ html {
   color: red;
   border: none;
 }
+
 .Search form span button .searchIcon {
   color: #8d2020;
 }
+
 .Search form span button:hover {
   cursor: pointer;
 }
@@ -520,19 +571,30 @@ html {
 .MovieDetail {
   min-height: 100vh;
 }
+
 .MovieDetail .rightSide {
   float: right;
   margin: 0 auto;
-  width: 85%;
+  max-width: 85%;
   height: auto;
   padding: 3em;
   color: white;
   background: #2d2b47;
 }
+
+@media (max-width: 40.375rem) {
+  .MovieDetail .rightSide {
+    float: none;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
 .MovieDetail .rightSide .topSection {
   height: 100%;
   padding: 4em 0 0 0;
 }
+
 .MovieDetail .rightSide .topSection .backLink {
   font-size: 1.5em;
   color: white;
@@ -545,9 +607,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
+  max-width: 80px;
   text-decoration: none;
 }
+
 .MovieDetail .rightSide .topSection .detRow {
   height: 100%;
   padding: 2em 0 0 0;
@@ -555,23 +618,43 @@ html {
   display: -ms-flexbox;
   display: flex;
 }
+
+@media (max-width: 40.375rem) {
+  .MovieDetail .rightSide .topSection .detRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .MovieDetail .rightSide .topSection .detRow .imgDiv {
-  width: 350px;
+  max-width: 350px;
   height: 500px;
 }
+
 .MovieDetail .rightSide .topSection .detRow .imgDiv img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .MovieDetail .rightSide .topSection .detRow .details {
-  width: 700px;
+  max-width: 700px;
   height: auto;
   padding: 5px 2em;
   font-family: "Roboto", sans-serif;
   color: #f1f1f1;
 }
+
+@media (max-width: 40.375rem) {
+  .MovieDetail .rightSide .topSection .detRow .details {
+    padding: 5px 0;
+    width: 100%;
+  }
+}
+
 .MovieDetail .rightSide .topSection .detRow .details .title {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -581,6 +664,7 @@ html {
   letter-spacing: 1.5px;
   margin: 0 auto 15px auto;
 }
+
 .MovieDetail .rightSide .topSection .detRow .details .title::after {
   width: 55px;
   height: 6px;
@@ -590,6 +674,7 @@ html {
   border-radius: 1000px;
   background: white;
 }
+
 .MovieDetail .rightSide .topSection .detRow .details .genre, .MovieDetail .rightSide .topSection .detRow .details .awards, .MovieDetail .rightSide .topSection .detRow .details .released, .MovieDetail .rightSide .topSection .detRow .details .year, .MovieDetail .rightSide .topSection .detRow .details .rated, .MovieDetail .rightSide .topSection .detRow .details .writer, .MovieDetail .rightSide .topSection .detRow .details .cast {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
@@ -597,15 +682,31 @@ html {
   margin: 8px 0;
   font-size: 1em;
 }
+
 .MovieDetail .rightSide .topSection .detRow .details .cast span {
   font-size: 1.09em;
   letter-spacing: 1.2px;
 }
+
 .MovieDetail .rightSide .topSection .detRow .details .bottomSection {
   margin: 30px 0 0 0;
   color: #f1f1f1;
 }
+
+@media (max-width: 40.375rem) {
+  .MovieDetail .rightSide .topSection .detRow .details .bottomSection {
+    max-width: 100%;
+  }
+}
+
 .MovieDetail .rightSide .topSection .detRow .details .bottomSection .plot {
   letter-spacing: 1.2px;
   font-size: 1.2rem;
 }
+
+@media (max-width: 40.375rem) {
+  .MovieDetail .rightSide .topSection .detRow .details .bottomSection .plot {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

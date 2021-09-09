@@ -19,7 +19,6 @@ const MovieContextProvider = (props) => {
     
 
     useEffect(() => {
-        setTimeout(() => {
             fetch(`https://www.omdbapi.com/?s=${movie}&apikey=2c0bfe2d`)
                 .then(res => res.json())
                 .then(data => {
@@ -30,7 +29,6 @@ const MovieContextProvider = (props) => {
                     setIsPending(true)
                     console.log(err)
                 })
-        }, 1000)
     }, [movie])
 
     const showDetail = (id) => {

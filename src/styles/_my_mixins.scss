@@ -13,3 +13,18 @@
 @mixin scale($num) {
     transform: scale($num);
 }
+
+
+$breakpoint: ('mobile': "40.375rem", "desktop": "90rem");
+
+@mixin breakpoint-mobile($screenSize) {
+    @media (max-width: map-get($breakpoint, $screenSize)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop($screenSize) {
+    @media (min-width: map-get($breakpoint, $screenSize)) {
+        @content;
+    }
+}

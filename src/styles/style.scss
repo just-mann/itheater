@@ -1,5 +1,5 @@
 @import 'default_styles';
-
+@import 'my_mixins';
 
 .Header {
     position: fixed;
@@ -63,6 +63,11 @@
     width: 15%;
     height: 100vh;
     z-index: 150;
+
+    // On small screen
+    @include breakpoint-mobile(mobile) {
+        display: none;
+    }
     
     .logoDiv {
         width: 100%;
@@ -360,8 +365,6 @@
                         }
                     }
                     
-
-                    
                     &:hover {
                         @include bxShadow;
                         cursor: pointer;
@@ -436,8 +439,6 @@
                 }
             }
         }
-
-        
     }
 }
 
@@ -448,11 +449,18 @@
     .rightSide {
         float: right;
         margin: 0 auto;
-        width: 85%;
+        max-width: 85%;
         height: auto;
         padding: 3em;
         color: white;
         background: #2d2b47;
+
+        // On small screen
+        @include breakpoint-mobile(mobile) {
+            float: none;
+            max-width: 100%;
+            padding: 1.5rem;
+        }
 
         .topSection {
             height: 100%;
@@ -464,7 +472,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                width: 80px;
+                max-width: 80px;
                 text-decoration: none;
             }
 
@@ -472,24 +480,35 @@
                 height: 100%;
                 padding: 2em 0 0 0;
                 display: flex;
+
+                // On small screen
+                @include breakpoint-mobile(mobile) {
+                    flex-direction: column;
+                }
                 
                 .imgDiv {
-                    width: 350px;
+                    max-width: 350px;
                     height: 500px;
                     
                     img {
-                        width: 100%;
+                        max-width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
                 }
                 
                 .details {
-                    width: 700px;
+                    max-width: 700px;
                     height: auto;
                     padding: 5px 2em;
                     font-family: $primary__font;
                     color: #f1f1f1;
+
+                    // On small screen
+                    @include breakpoint-mobile(mobile) {
+                        padding: 5px 0;
+                        width: 100%;
+                    }
 
                     .title {
                         color: white;
@@ -531,14 +550,19 @@
                         margin: 30px 0 0 0;
                         color: #f1f1f1;
 
+                        @include breakpoint-mobile(mobile) {
+                            max-width: 100%;
+                        }
+
                         .plot {
                             letter-spacing: 1.2px;
                             font-size: 1.2rem;
+
+                            @include breakpoint-mobile(mobile) {
+                                max-width: 100%;
+                            }
                         }
                     }
-
-
-
                 }
             }
         }
