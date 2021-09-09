@@ -6,16 +6,18 @@
     align-items: $alItm;
 }
 
+// Box Shadow
 @mixin bxShadow {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
+// Scale
 @mixin scale($num) {
     transform: scale($num);
 }
 
-
-$breakpoint: ('mobile': "40.375rem", "desktop": "90rem");
+// Responsive 
+$breakpoint: ('mobile': "55.375rem", "desktop": "90rem");
 
 @mixin breakpoint-mobile($screenSize) {
     @media (max-width: map-get($breakpoint, $screenSize)) {

@@ -35,7 +35,7 @@ const Contact = () => {
                     <div className="contactDet">
                         <h3>Hi There</h3>
                         <p>
-                            I am, and always will be a student of the art of <span>CODING</span>, expecially 
+                            I am, and always will be a student of the art of <span>CODING</span>, especially 
                             <span> Front End Web Development</span>. This project 
                             Cumque aliquam asperiores eos, 
                             magni quia quasi molestiae id deserunt, ut 

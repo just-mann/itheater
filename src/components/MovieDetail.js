@@ -19,6 +19,7 @@ const MovieDetail = () => {
 
     useEffect(() => {
         showDetail(id);
+        window.scrollTo(0, 0);
     })
 
     const movieTitle = `${isSelected.Title}`;

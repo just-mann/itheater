@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-@import 'my_mixins';
-@import 'responsive';
-
 html {
     --animate-duration: 2s;
     scroll-behavior: smooth;
