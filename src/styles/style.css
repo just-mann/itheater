@@ -118,6 +118,7 @@ a {
   cursor: pointer;
   padding: 7px 9px;
   border: 2px solid #ffffff;
+  color: #EE005F;
 }
 
 @media (max-width: 55.375rem) {
@@ -127,8 +128,16 @@ a {
     left: 0;
     width: 180px;
     min-height: 100vh;
-    padding: 4.3rem 0;
+    padding: 1rem 0;
+    color: #ffffff;
     background-color: #EE005F;
+    display: none;
+  }
+  .sideNav .closeNav {
+    cursor: pointer;
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin: 0.2rem 0 0.65rem 1.5rem;
   }
   .sideNav .links {
     display: -webkit-box;
@@ -142,16 +151,44 @@ a {
   .sideNav .links a {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
-    padding: 0.85rem 2rem;
-    font-size: 1.4rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .sideNav .links a .arrows {
+    font-weight: bold;
+    display: none;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
   .sideNav .links a:hover {
     background-color: black;
+  }
+  .sideNav .links a:hover .arrows {
+    display: block;
   }
 }
 
 @media (min-width: 90rem) {
   .sideNav {
+    display: none;
+  }
+  .sideNav .closeNav {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0.5rem 0 0.65rem 1.5rem;
     display: none;
   }
 }

@@ -8,23 +8,52 @@
         left: 0;
         width: 180px;
         min-height: 100vh;
-        padding: 4.3rem 0;
+        padding: 1rem 0;
+        color: $white;
         background-color: $nav__color;
+        display: none;
+
+
+        .closeNav {
+            cursor: pointer;
+            font-size: 2.3rem;
+            color: $white;
+            margin: 0.2rem 0 0.65rem 1.5rem;
+        }
 
 
         .links {
             display: flex;
             flex-direction: column;
+        
 
 
             a {
                 font-family: $primary__font;
                 color: $white;
-                padding: 0.85rem 2rem;
-                font-size: 1.4rem;
+                padding: 0.85rem 1.5rem;
+                font-size: 1.3rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+                transition: all 0.4s;
+
+
+                .arrows {
+                    font-weight: bold;
+                    display: none;
+                    transition: all 0.4s;
+                }
+
+
 
                 &:hover {
                     background-color: black;
+
+                    .arrows {
+                        display: block;
+                    }
                 }
             }
         }
@@ -36,5 +65,13 @@
 @include breakpoint-desktop(desktop) {
     .sideNav {
         display: none;
+
+        .closeNav {
+            cursor: pointer;
+            font-size: 2rem;
+            color: $white;
+            margin: 0.5rem 0 0.65rem 1.5rem;
+            display: none;
+        }
     }
 }
