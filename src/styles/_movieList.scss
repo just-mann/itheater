@@ -1,1 +1,116 @@
 @import 'mixins';
+
+@include breakpoint-mobile(phone) {
+    
+    .showList {
+        
+        .rightSide {
+            // background-color: rgb(28, 187, 62);
+            max-width: 100%;
+            margin: auto;
+            padding: 1.7rem 1.5rem;
+
+            div {
+                // text-align: center;
+
+                h4 {
+
+                }
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+                    gap: 20px;
+
+                    .product {
+                        max-width: 209px;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint-mobile(tablet) {
+    .showList {
+        
+        .rightSide {
+            // background-color: aqua;
+            max-width: 100%;
+            margin: auto;
+            padding: 1.7rem 1.5rem;
+
+            div {
+                // text-align: center;
+
+                h4 {
+
+                }
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+                    gap: 20px;
+
+                    .product {
+                        min-width: 209px;
+                        min-height: 300px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint-desktop(laptop) {
+
+    .showList {
+        // background-color: yellow;
+        
+
+        .rightSide {
+            max-width: 100%;
+            margin: auto;
+            padding: 1.7rem 1.5rem;
+            
+
+
+
+            div {
+                // text-align: center;
+
+                h4 {
+
+                }
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+                    gap: 20px;
+
+                    .product {
+                        min-width: 210px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

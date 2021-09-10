@@ -17,13 +17,19 @@
 }
 
 // Responsive 
-$breakpoint: ('mobile': "55.375rem", "desktop": "90rem");
+$breakpoint: ("phone": "25.375rem", "tablet": "85rem", "laptop": "85rem");
 
 @mixin breakpoint-mobile($screenSize) {
     @media (max-width: map-get($breakpoint, $screenSize)) {
         @content;
     }
 }
+
+// @mixin breakpoint-mobile($screenSize) {
+//     @media (max-width: map-get($breakpoint, $screenSize)) {
+//         @content;
+//     }
+// }
 
 @mixin breakpoint-desktop($screenSize) {
     @media (min-width: map-get($breakpoint, $screenSize)) {

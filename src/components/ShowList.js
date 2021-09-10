@@ -11,7 +11,7 @@ const ShowList = () => {
     const {data, isPending, movie} = useContext(movieContext);
 
     return (
-        <div className="ShowList">
+        <div className="showList">
             <Header />
             <SideNav />
             <div className="rightSide">
@@ -25,11 +25,7 @@ const ShowList = () => {
                             return(
                                 <Link to={`/detail/${myData.imdbID}`} key={myData.imdbID} className="product">
                                     <img src={myData.Poster} alt={myData.Title} />
-                                    <p className="prodTitle">{myData.Title}</p>
-                                    <div className="infoDiv">
-                                        <p className="type">{myData.Type}</p>
-                                        <p className="year">{myData.Year}</p>
-                                    </div>
+                                    
                                 </Link>
                             )
                         })}

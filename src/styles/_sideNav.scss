@@ -1,7 +1,13 @@
 @import 'mixins';
 
 
-@include breakpoint-mobile(mobile) {
+
+@include breakpoint-mobile(phone) {
+
+}
+
+
+@include breakpoint-mobile(tablet) {
     .sideNav {
         position: fixed;
         top: 0;
@@ -18,7 +24,7 @@
             cursor: pointer;
             font-size: 2.3rem;
             color: $white;
-            margin: 0.2rem 0 0.65rem 1.5rem;
+            margin: 0.18rem 0 0.65rem 1.4rem;
         }
 
 
@@ -36,8 +42,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                border-top: 1px solid $white;
                 font-weight: bold;
                 transition: all 0.4s;
+
+                &:last-child {
+                    border-bottom: 1px solid $white;
+                }
 
 
                 .arrows {
@@ -62,7 +73,7 @@
 }
 
 
-@include breakpoint-desktop(desktop) {
+@include breakpoint-desktop(laptop) {
     .sideNav {
         display: none;
 
@@ -73,5 +84,8 @@
             margin: 0.5rem 0 0.65rem 1.5rem;
             display: none;
         }
+
+        
     }
+
 }
