@@ -82,18 +82,22 @@
             }
         }
 
-        .search {            
+        .search {
+            width: 300px;           
 
             form {
+                width: 100%;
                 margin: 0;
-                border: 2px solid $white;
+                border: 3px solid $white;
                 padding: 0 0 0 15px;
 
                 span {
+                    width: 100%;
                     padding: 0;
                     margin: 0;
 
                     input {
+                        width: 80%;
                         border: none;
                         outline: none;
                         color: $white;
@@ -105,10 +109,12 @@
                     }
 
                     button {
+                        width: 20%;
                         background-color: $white;
                         cursor: pointer;
                         padding: 7px 9px;
-                        border: 2px solid $white;
+                        margin-left: auto;
+                        border: 3px solid $white;
                         color: $nav__color;
                     }
                 }

@@ -128,18 +128,25 @@ a {
   }
 }
 
+.header .my_container .search {
+  width: 300px;
+}
+
 .header .my_container .search form {
+  width: 100%;
   margin: 0;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   padding: 0 0 0 15px;
 }
 
 .header .my_container .search form span {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .header .my_container .search form span input {
+  width: 80%;
   border: none;
   outline: none;
   color: #ffffff;
@@ -163,10 +170,12 @@ a {
 }
 
 .header .my_container .search form span button {
+  width: 20%;
   background-color: #ffffff;
   cursor: pointer;
   padding: 7px 9px;
-  border: 2px solid #ffffff;
+  margin-left: auto;
+  border: 3px solid #ffffff;
   color: #EE005F;
 }
 
@@ -180,13 +189,14 @@ a {
     padding: 1rem 0;
     color: #ffffff;
     background-color: #EE005F;
+    z-index: 3000;
     display: none;
   }
   .sideNav .closeNav {
     cursor: pointer;
     font-size: 2.3rem;
     color: #ffffff;
-    margin: 0.18rem 0 0.65rem 1.4rem;
+    margin: 0.18rem 0 1rem 1.4rem;
   }
   .sideNav .links {
     display: -webkit-box;
@@ -226,7 +236,8 @@ a {
     transition: all 0.4s;
   }
   .sideNav .links a:hover {
-    background-color: black;
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
   }
   .sideNav .links a:hover .arrows {
     display: block;
