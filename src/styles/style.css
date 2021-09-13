@@ -29,6 +29,7 @@ a {
   padding: 1rem 1.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  z-index: 2000;
 }
 
 @media (max-width: 85rem) {
@@ -246,10 +247,26 @@ a {
 }
 
 @media (max-width: 25.375rem) {
+  .showList {
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+  }
   .showList .rightSide {
     max-width: 100%;
     margin: auto;
-    padding: 1.7rem 1.5rem;
+    padding: 1.9rem 1.5rem;
+  }
+  .showList .rightSide div {
+    padding: 1rem 0;
+  }
+  .showList .rightSide div h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .showList .rightSide div .productDiv {
     text-align: center;
@@ -257,21 +274,44 @@ a {
     display: grid;
     -ms-grid-columns: (minmax(207px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
-    gap: 20px;
+    gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
-    max-width: 209px;
+    max-width: 200px;
   }
   .showList .rightSide div .productDiv .product img {
     max-width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .showList .rightSide div .productDiv .product img:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
 }
 
 @media (max-width: 85rem) {
+  .showList {
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+  }
   .showList .rightSide {
     max-width: 100%;
     margin: auto;
-    padding: 1.7rem 1.5rem;
+    padding: 1.9rem 1.5rem;
+  }
+  .showList .rightSide div {
+    padding: 1rem 0;
+  }
+  .showList .rightSide div h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .showList .rightSide div .productDiv {
     text-align: center;
@@ -279,23 +319,45 @@ a {
     display: grid;
     -ms-grid-columns: (minmax(207px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
-    gap: 20px;
+    gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
-    min-width: 209px;
+    min-width: 200px;
     min-height: 300px;
   }
   .showList .rightSide div .productDiv .product img {
     width: 100%;
     height: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .showList .rightSide div .productDiv .product img:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
 }
 
 @media (min-width: 85rem) {
+  .showList {
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+  }
   .showList .rightSide {
     max-width: 100%;
     margin: auto;
-    padding: 1.7rem 1.5rem;
+    padding: 1.9rem 1.5rem;
+  }
+  .showList .rightSide div {
+    padding: 1rem 0;
+  }
+  .showList .rightSide div h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .showList .rightSide div .productDiv {
     text-align: center;
@@ -303,13 +365,20 @@ a {
     display: grid;
     -ms-grid-columns: (minmax(210px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 20px;
+    gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
-    min-width: 210px;
+    min-width: 200px;
   }
   .showList .rightSide div .productDiv .product img {
     width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .showList .rightSide div .productDiv .product img:hover {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
 }
 /*# sourceMappingURL=style.css.map */

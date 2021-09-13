@@ -16,7 +16,7 @@ const ShowList = () => {
             <SideNav />
             <div className="rightSide">
                 <div>
-                    <h4 className="searched">You searched: <span>{movie}</span></h4>
+                    {/* <h4 className="searched">You searched: <span>{movie}</span></h4> */}
                     <div className="productDiv">
                         {isPending && <div>
                             <ReactLoading className="loading" type={'bars'} color={'#fff'} />
