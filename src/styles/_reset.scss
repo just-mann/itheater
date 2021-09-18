@@ -13,7 +13,6 @@ body {
     position: relative;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -23,5 +22,6 @@ $white: #ffffff;
 $primary__font: 'Roboto', sans-serif;
 $logo__font: 'Bungee Inline', cursive;
 $misc__font: 'Train One', cursive;
-// $myBackground: rgba(#040911, 0.9);
+$buttonHoverClr: #192537;
 $myBackground: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+

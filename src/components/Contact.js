@@ -10,30 +10,29 @@ const Contact = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    })
+    });
 
     const sendMessage = (e) => {
-        // Prevent default refresh
+        // Prevent default form refresh
         e.prevendDefault();
 
         emailjs.sendForm('i_theater', "i_theater_app1245", e.target, 'user_q41WWjjATyZnRcd2GzQuI')
             .then(result => {
                 console.log(result);
             }, (error) => {
-                console.log(error)
+                console.log(error);
             });
-
     }
 
     return (
-        <div className="Contact">
+        <div className="contact">
             <Header />
             <SideNav />
             <div className="rightSide">
                 <h3>Feedback</h3>
                 <div className="row">
                     <div className="contactDet">
-                        <h3>Hi There</h3>
+                        <h3>Glad You're Here</h3>
                         <p>
                             I am, and always will be a student of the art of <span>CODING</span>, especially 
                             <span> Front End Web Development</span>. This project 
@@ -60,7 +59,7 @@ const Contact = () => {
                         </div>
                         <div>
                             {/* <label htmlFor="message">Message</label> */}
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please Leave a Comment" required></textarea>
+                            <textarea name="message" id="message" cols="30" rows="13" placeholder="Please Leave a Comment" required></textarea>
                         </div>
                         <div>
                             <input type="submit" value="Send Message" />

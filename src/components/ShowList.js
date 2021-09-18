@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 const ShowList = () => {
     
-    const {data, isPending, movie} = useContext(movieContext);
+    const {data, isPending} = useContext(movieContext);
 
     return (
         <div className="showList">
