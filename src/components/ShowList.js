@@ -16,7 +16,6 @@ const ShowList = () => {
             <SideNav />
             <div className="rightSide">
                 <div>
-                    {/* <h4 className="searched">You searched: <span>{movie}</span></h4> */}
                     <div className="productDiv">
                         {isPending && <div>
                             <ReactLoading className="loading" type={'bars'} color={'#fff'} />
@@ -25,7 +24,6 @@ const ShowList = () => {
                             return(
                                 <Link to={`/detail/${myData.imdbID}`} key={myData.imdbID} className="product">
                                     <img src={myData.Poster} alt={myData.Title} />
-                                    
                                 </Link>
                             )
                         })}

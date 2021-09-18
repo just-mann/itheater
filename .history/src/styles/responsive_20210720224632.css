@@ -1,0 +1,18 @@
+@media (max-width: 1100px) {
+  .Header {
+    background: white;
+    color: black;
+  }
+
+  .SideNav {
+    float: none;
+    width: 0;
+    display: none;
+  }
+
+  .ShowList .rightSide, .Contact .rightSide {
+    width: 100%;
+    float: none;
+    padding: 1.5em;
+  }
+}/*# sourceMappingURL=responsive_20210720224632.css.map */

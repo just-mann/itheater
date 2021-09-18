@@ -19,7 +19,6 @@ a {
 }
 
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -31,13 +30,11 @@ a {
   transition: all 0.4s ease-in-out;
   z-index: 2000;
 }
-
 @media (max-width: 85rem) {
   .header {
     padding: 1rem 1.1rem;
   }
 }
-
 .header .my_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,33 +50,28 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header .my_container .app_Logo {
   color: #ffffff;
   font-family: "Bungee Inline", cursive;
   font-size: 2rem;
   display: block;
 }
-
 @media (max-width: 85rem) {
   .header .my_container .app_Logo {
     display: none;
   }
 }
-
 .header .my_container .hamburger {
   cursor: pointer;
   color: #ffffff;
   font-size: 2.3rem;
   display: none;
 }
-
 @media (max-width: 85rem) {
   .header .my_container .hamburger {
     display: block;
   }
 }
-
 .header .my_container .links {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
@@ -94,13 +86,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .header .my_container .links a {
   position: relative;
   color: #ffffff;
   margin: 0 20px;
 }
-
 .header .my_container .links a::after {
   position: absolute;
   content: "";
@@ -117,34 +107,28 @@ a {
   transition: all 0.4s;
   display: none;
 }
-
 .header .my_container .links a:hover::after {
   display: block;
 }
-
 @media (max-width: 85rem) {
   .header .my_container .links {
     display: none;
   }
 }
-
 .header .my_container .search {
   width: 300px;
 }
-
 .header .my_container .search form {
   width: 100%;
   margin: 0;
   border: 3px solid #ffffff;
   padding: 0 0 0 15px;
 }
-
 .header .my_container .search form span {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
 .header .my_container .search form span input {
   width: 80%;
   border: none;
@@ -152,23 +136,21 @@ a {
   color: #ffffff;
   background-color: transparent;
 }
-
 .header .my_container .search form span input::-webkit-input-placeholder {
   color: #ffffff;
 }
-
+.header .my_container .search form span input::-moz-placeholder {
+  color: #ffffff;
+}
 .header .my_container .search form span input:-ms-input-placeholder {
   color: #ffffff;
 }
-
 .header .my_container .search form span input::-ms-input-placeholder {
   color: #ffffff;
 }
-
 .header .my_container .search form span input::placeholder {
   color: #ffffff;
 }
-
 .header .my_container .search form span button {
   width: 20%;
   background-color: #ffffff;
@@ -243,7 +225,6 @@ a {
     display: block;
   }
 }
-
 @media (min-width: 85rem) {
   .sideNav {
     display: none;
@@ -256,19 +237,21 @@ a {
     display: none;
   }
 }
-
 @media (max-width: 25.375rem) {
   .showList {
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
     background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+    min-height: 100vh;
   }
   .showList .rightSide {
     max-width: 100%;
+    height: 100%;
     margin: auto;
     padding: 1.9rem 1.5rem;
   }
   .showList .rightSide div {
     padding: 1rem 0;
+    height: 100%;
   }
   .showList .rightSide div h4 {
     font-family: "Roboto", sans-serif;
@@ -283,8 +266,7 @@ a {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(207px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
     gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
@@ -301,11 +283,11 @@ a {
             transform: scale(1.08);
   }
 }
-
 @media (max-width: 85rem) {
   .showList {
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
     background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+    min-height: 100vh;
   }
   .showList .rightSide {
     max-width: 100%;
@@ -328,8 +310,7 @@ a {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(207px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
     gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
@@ -347,11 +328,11 @@ a {
             transform: scale(1.08);
   }
 }
-
 @media (min-width: 85rem) {
   .showList {
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
     background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+    min-height: 100vh;
   }
   .showList .rightSide {
     max-width: 100%;
@@ -374,8 +355,7 @@ a {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(210px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     gap: 25px;
   }
   .showList .rightSide div .productDiv .product {
@@ -392,7 +372,37 @@ a {
             transform: scale(1.08);
   }
 }
-
+@media (max-width: 85rem) {
+  .rightSide {
+    min-height: 100vh;
+  }
+  .rightSide .topSection {
+    position: relative;
+    min-height: 100vh;
+  }
+  .rightSide .topSection .backgroundImgDiv {
+    background: yellow;
+    min-height: 100%;
+    z-index: 1;
+  }
+  .rightSide .topSection .backgroundImgDiv img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .rightSide .topSection .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+    opacity: 0.87;
+    z-index: 10;
+  }
+}
 @media (max-width: 25.375rem) {
   .contact .rightSide {
     max-width: 100%;
@@ -425,8 +435,59 @@ a {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+  .contact .rightSide .row {
+    padding: 2.4rem 0 0 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .contact .rightSide .row .contactDet {
+    max-width: 100%;
+  }
+  .contact .rightSide .row .contactDet h3 {
+    margin-bottom: 1.5rem;
+  }
+  .contact .rightSide .row .contactDet p {
+    font-size: 1.15rem;
+    line-height: 1.7rem;
+    -webkit-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+  }
+  .contact .rightSide .row form {
+    margin-top: 1.6rem;
+    max-width: 100%;
+  }
+  .contact .rightSide .row form div {
+    width: 100%;
+  }
+  .contact .rightSide .row form div:not(:first-child) {
+    margin: 0.75rem 0 0 0;
+  }
+  .contact .rightSide .row form div input {
+    padding: 12px 15px;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+  }
+  .contact .rightSide .row form div textarea {
+    padding: 12px 15px;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+  }
+  .contact .rightSide .row form div input[type=submit] {
+    cursor: pointer;
+    font-size: 1.1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .contact .rightSide .row form div input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #192537;
+  }
 }
-
 @media (max-width: 85rem) {
   .contact {
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
@@ -505,18 +566,19 @@ a {
     border: 3px solid #ffffff;
     background-color: transparent;
   }
-  .contact .rightSide .row form div input[type="submit"] {
+  .contact .rightSide .row form div input[type=submit] {
     cursor: pointer;
     font-size: 1.1rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  .contact .rightSide .row form div input[type="submit"]:hover {
     background-color: #ffffff;
     color: #192537;
   }
+  .contact .rightSide .row form div input[type=submit]:hover {
+    background-color: transparent;
+    color: #ffffff;
+  }
 }
-
 @media (min-width: 85rem) {
   .contact {
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
@@ -557,8 +619,8 @@ a {
   .contact .rightSide .row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1.8fr 2fr;
-        grid-template-columns: 1.8fr 2fr;
+    -ms-grid-columns: 1.8fr 1.5rem 2fr;
+    grid-template-columns: 1.8fr 2fr;
     gap: 1.5rem;
     padding: 2.4rem 0 0 0;
     font-family: "Roboto", sans-serif;
@@ -599,15 +661,16 @@ a {
     border: 3px solid #ffffff;
     background-color: transparent;
   }
-  .contact .rightSide .row form div input[type="submit"] {
+  .contact .rightSide .row form div input[type=submit] {
     cursor: pointer;
     font-size: 1.1rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-  }
-  .contact .rightSide .row form div input[type="submit"]:hover {
     background-color: #ffffff;
     color: #192537;
   }
+  .contact .rightSide .row form div input[type=submit]:hover {
+    background-color: transparent;
+    color: #ffffff;
+  }
 }
-/*# sourceMappingURL=style.css.map */

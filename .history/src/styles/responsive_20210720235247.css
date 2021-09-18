@@ -1,0 +1,78 @@
+@media (max-width: 1100px) {
+  .Header {
+    background: white;
+    color: black;
+  }
+
+  .SideNav {
+    float: none;
+    width: 0;
+    display: none;
+  }
+
+  .ShowList, .Contact, .MovieDetail {
+    height: 100vh;
+  }
+  .ShowList .rightSide, .Contact .rightSide, .MovieDetail .rightSide {
+    width: 100%;
+    float: none;
+    padding: 3em 1.3em;
+  }
+  .ShowList .rightSide .row, .Contact .rightSide .row, .MovieDetail .rightSide .row {
+    grid-template-columns: 1fr;
+  }
+
+  .Search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .Search form span {
+    background: transparent;
+    padding: 0px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 40px;
+  }
+  .Search form span input {
+    background: inherit;
+    padding: 10px 0px;
+    color: white;
+    border: none;
+    width: 90%;
+    height: 100%;
+    border-bottom: 1px solid white;
+    outline: none;
+  }
+  .Search form span input::-moz-placeholder {
+    color: #d4bbbb;
+    font-size: 1.1rem;
+  }
+  .Search form span input:-ms-input-placeholder {
+    color: #d4bbbb;
+    font-size: 1.1rem;
+  }
+  .Search form span input::placeholder {
+    color: #d4bbbb;
+    font-size: 1.1rem;
+  }
+  .Search form span button {
+    padding: 5px 10px;
+    height: 100%;
+    width: 15%;
+    background: white;
+    color: red;
+    border: none;
+  }
+  .Search form span button .searchIcon {
+    color: #8d2020;
+  }
+  .Search form span button:hover {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=responsive_20210720235247.css.map */

@@ -33,6 +33,7 @@ const MovieDetail = () => {
     const movieActors  = `${isSelected.Actors}`;
     const movieWriter  = `${isSelected.Writer}`;
         
+    
 
     return (
         <div className="MovieDetail">
@@ -40,30 +41,35 @@ const MovieDetail = () => {
             <SideNav />
             <div className="rightSide">
                 <div className="topSection">
-                    <Link to='/' className="backLink"><FaArrowLeft /> Back</Link>
-                    {isPending && <div>
-                        <ReactLoading className="loading" type={'bars'} color={'#fff'} />    
-                    </div>}
-                    {isSelected && 
-                        <div className="detRow">
-                            <div className="imgDiv">
-                                <img src={movieImg} alt={movieTitle} />
-                            </div>
-                            <div className="details">
-                                <h3 className="title">{movieTitle}</h3>
-                                <p className="genre">Genre: {movieGenre}</p>
-                                <p className="released">Released: {movieReleasedYear}</p>
-                                <p className="year">Years active: {movieYears}</p>
-                                <p className="rated">Rated: {movieRated}</p>
-                                <p className="writer">Writer: {movieWriter}</p>
-                                <p className="cast">Cast: <span>{movieActors}</span></p>
-                                <p className="awards">Awards: {movieAwards}</p>
-                                <div className="bottomSection">
-                                    <p className="plot">{moviePlot}</p>
+                    <div className="backgroundImgDiv">
+                        <img src={movieImg} alt={movieTitle} />
+                    </div>
+                    <div className="overlay">
+                        <Link to='/' className="backLink"><FaArrowLeft /> Back</Link>
+                        {isPending && <div>
+                            <ReactLoading className="loading" type={'bars'} color={'#fff'} />    
+                        </div>}
+                        {isSelected && 
+                            <div className="detRow">
+                                {/* <div className="imgDiv">
+                                    <img src={movieImg} alt={movieTitle} />
+                                </div> */}
+                                <div className="details">
+                                    <h3 className="title">{movieTitle}</h3>
+                                    <p className="genre">Genre: {movieGenre}</p>
+                                    <p className="released">Released: {movieReleasedYear}</p>
+                                    <p className="year">Years active: {movieYears}</p>
+                                    <p className="rated">Rated: {movieRated}</p>
+                                    <p className="writer">Writer: {movieWriter}</p>
+                                    <p className="cast">Cast: <span>{movieActors}</span></p>
+                                    <p className="awards">Awards: {movieAwards}</p>
+                                    <div className="bottomSection">
+                                        <p className="plot">{moviePlot}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
             </div>
         </div>

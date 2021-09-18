@@ -4,14 +4,18 @@
     
     .showList {
         background: $myBackground;
+        min-height: 100vh;
+
         
         .rightSide {
             max-width: 100%;
+            height: 100%;
             margin: auto;
             padding: 1.9rem 1.5rem;
 
             div {
                 padding: 1rem 0;
+                height: 100%;
                 // text-align: center;
 
                 h4 {
@@ -54,6 +58,8 @@
 
     .showList {
         background: $myBackground;
+        min-height: 100vh;
+        
         
         .rightSide {
             max-width: 100%;
@@ -104,6 +110,7 @@
 
     .showList {
         background: $myBackground;
+        min-height: 100vh;
         
 
         .rightSide {

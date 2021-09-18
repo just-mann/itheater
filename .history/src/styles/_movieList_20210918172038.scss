@@ -1,0 +1,154 @@
+@import 'mixins';
+
+@include breakpoint-mobile(phone) {
+    
+    .showList {
+        background: $myBackground;
+        min-height: 100vh;
+        
+        .rightSide {
+            max-width: 100%;
+            margin: auto;
+            padding: 1.9rem 1.5rem;
+
+            div {
+                padding: 1rem 0;
+                // text-align: center;
+
+                h4 {
+                    font-family: $primary__font;
+                    font-size: 1rem;
+                    color: $white;
+                    text-transform: capitalize;
+                    margin: 2rem 0;
+                    transition: all 0.5s;
+                }
+                
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+                    gap: 25px;
+
+                    .product {
+                        max-width: 200px;
+
+                        img {
+                            max-width: 100%;
+                            height: 100%;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.08);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint-mobile(tablet) {
+
+    .showList {
+        background: $myBackground;
+        
+        .rightSide {
+            max-width: 100%;
+            margin: auto;
+            padding: 1.9rem 1.5rem;
+
+            div {
+                padding: 1rem 0;
+                // text-align: center;
+
+                h4 {
+                    font-family: $primary__font;
+                    font-size: 1.2rem;
+                    color: $white;
+                    text-transform: capitalize;
+                    margin: 2rem 0;
+                    transition: all 0.5s;
+                }
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+                    gap: 25px;
+
+                    .product {
+                        min-width: 200px;
+                        min-height: 300px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.08);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint-desktop(laptop) {
+
+    .showList {
+        background: $myBackground;
+        
+
+        .rightSide {
+            max-width: 100%;
+            margin: auto;
+            padding: 1.9rem 1.5rem;
+            
+
+
+
+            div {
+                padding: 1rem 0;
+                // text-align: center;
+
+                h4 {
+                    font-family: $primary__font;
+                    font-size: 1.5rem;
+                    color: $white;
+                    text-transform: capitalize;
+                    margin: 2rem 0;
+                    transition: all 0.5s;
+                }
+
+                .productDiv {
+                    text-align: center;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+                    gap: 25px;
+
+                    .product {
+                        min-width: 200px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: scale(1.08);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

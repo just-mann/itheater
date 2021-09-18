@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  .Header {
+    background: white;
+    color: black;
+  }
+
+  .SideNav {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive_20210720223612.css.map */

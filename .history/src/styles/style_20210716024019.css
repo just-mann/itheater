@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Header {
+  background: red;
+}/*# sourceMappingURL=style_20210716024019.css.map */

@@ -35,6 +35,72 @@
                     transition: all 0.3s;
                 }
             }
+
+            .row {
+                padding: 2.4rem 0 0 0;
+                font-family: $primary__font;
+
+                .contactDet {
+                    max-width: 100%;
+
+                    h3 {
+                        // font-size: 1.4rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.15rem;
+                        line-height: 1.7rem;
+                        transition: font-size 0.3s;
+                    }
+                }
+
+                form {
+                    // background-color: yellow;
+                    margin-top: 1.6rem;
+                    max-width: 100%;
+
+                    div {
+                        width: 100%;
+                        
+                        &:not(:first-child){
+                            margin: 0.75rem 0 0 0;
+                        }
+
+                        input {
+                            padding: 12px 15px;
+                            width: 100%;
+                            outline: none;
+                            color: $white;
+                            border: 3px solid $white;
+                            // border-radius: 5px;
+                            background-color: transparent;
+                        }
+                        
+                        textarea {
+                            padding: 12px 15px;
+                            width: 100%;
+                            outline: none;
+                            color: $white;
+                            border: 3px solid $white;
+                            // border-radius: 5px;
+                            background-color: transparent;
+                        }
+
+                        input[type="submit"] {
+                            cursor: pointer;
+                            font-size: 1.1rem;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                background-color: $white;
+                                color: $buttonHoverClr;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -131,10 +197,12 @@
                             cursor: pointer;
                             font-size: 1.1rem;
                             transition: all 0.3s;
+                            background-color: $white;
+                            color: $buttonHoverClr;
 
                             &:hover {
-                                background-color: $white;
-                                color: $buttonHoverClr;
+                                background-color: transparent;
+                                color: $white;
                             }
                         }
                     }
@@ -240,10 +308,12 @@
                             cursor: pointer;
                             font-size: 1.1rem;
                             transition: all 0.3s;
+                            background-color: $white;
+                            color: $buttonHoverClr;
 
                             &:hover {
-                                background-color: $white;
-                                color: $buttonHoverClr;
+                                background-color: transparent;
+                                color: $white;
                             }
                         }
                     }
