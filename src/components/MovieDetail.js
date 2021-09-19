@@ -51,9 +51,9 @@ const MovieDetail = () => {
                         </div>}
                         {isSelected && 
                             <div className="detRow">
-                                {/* <div className="imgDiv">
+                                <div className="imgDiv">
                                     <img src={movieImg} alt={movieTitle} />
-                                </div> */}
+                                </div>
                                 <div className="details">
                                     <h3 className="title">{movieTitle}</h3>
                                     <p className="genre">Genre: {movieGenre}</p>

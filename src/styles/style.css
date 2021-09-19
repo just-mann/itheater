@@ -393,14 +393,89 @@ a {
   }
   .rightSide .topSection .overlay {
     position: absolute;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
     background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
-    opacity: 0.87;
+    padding: 1.9rem 1.5rem;
+    opacity: 0.85;
     z-index: 10;
+  }
+  .rightSide .topSection .overlay a.backLink {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  .rightSide .topSection .overlay .detRow .imgDiv {
+    display: none;
+  }
+  .rightSide .topSection .overlay .detRow .details .title {
+    position: relative;
+    font-family: "Train One", cursive;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2.5rem auto 4.5rem auto;
+  }
+  .rightSide .topSection .overlay .detRow .details .title::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    background: #ffffff;
+    height: 5px;
+    width: 70px;
+    border-radius: 1000px;
+  }
+  .rightSide .topSection .overlay .detRow .details .genre, .rightSide .topSection .overlay .detRow .details .released, .rightSide .topSection .overlay .detRow .details .year, .rightSide .topSection .overlay .detRow .details .rated, .rightSide .topSection .overlay .detRow .details .writer, .rightSide .topSection .overlay .detRow .details .cast, .rightSide .topSection .overlay .detRow .details .award {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+}
+@media (min-width: 85rem) {
+  .rightSide {
+    min-height: 100vh;
+  }
+  .rightSide .topSection {
+    position: relative;
+    min-height: 100vh;
+  }
+  .rightSide .topSection .backgroundImgDiv {
+    background: yellow;
+    min-height: 100%;
+    z-index: 1;
+  }
+  .rightSide .topSection .backgroundImgDiv img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .rightSide .topSection .overlay {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left bottom, right top, from(#1e2e44), color-stop(#192537), color-stop(#141d2a), color-stop(#0f151d), to(#040911));
+    background: linear-gradient(to right top, #1e2e44, #192537, #141d2a, #0f151d, #040911);
+    padding: 1.9rem 1.5rem;
+    opacity: 0.85;
+    z-index: 10;
+  }
+  .rightSide .topSection .overlay a.backLink {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  .rightSide .topSection .overlay .detRow .imgDiv {
+    display: block;
   }
 }
 @media (max-width: 25.375rem) {
