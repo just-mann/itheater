@@ -53,5 +53,6 @@
   "bugs": {
     "url": "https://github.com/just-mann/itheater/issues"
   },
-  "homepage": "https://github.com/just-mann/itheater#readme"
+  "homepage": "https://github.com/just-mann/itheater#readme",
+  "devDependencies": {}
 }
